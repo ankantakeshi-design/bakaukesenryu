@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>言葉とメンタルのバランストレーニング</title>
+
+<!-- ── Google Analytics ── -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3K7QZCDPR3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3K7QZCDPR3');
+</script>
+
+<!-- ── SEO ── -->
+<meta name="description" content="ネガティブな言葉を消すのではなく、ポジティブな言葉で相殺する。100語のバランストレーニングで、心の安定力を育てましょう。">
+<meta name="keywords" content="メンタルトレーニング,ポジティブ思考,バランス,言葉,自己肯定感,マインドセット">
+<meta name="author" content="Takechan">
+<link rel="canonical" href="https://balancetraning.pages.dev/">
+
+<!-- ── OGP (Facebook / LINE など) ── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://balancetraning.pages.dev/">
+<meta property="og:title" content="言葉とメンタルのバランストレーニング">
+<meta property="og:description" content="ネガティブな言葉を消すのではなく、ポジティブな言葉で相殺する。100語のバランストレーニングで、心の安定力を育てましょう。">
+<meta property="og:image" content="https://balancetraning.pages.dev/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="言葉とメンタルのバランストレーニング">
+
+<!-- ── Twitter Card ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://balancetraning.pages.dev/">
+<meta name="twitter:title" content="言葉とメンタルのバランストレーニング">
+<meta name="twitter:description" content="ネガティブな言葉を消すのではなく、ポジティブな言葉で相殺する。100語のバランストレーニングで、心の安定力を育てましょう。">
+<meta name="twitter:image" content="https://balancetraning.pages.dev/ogp.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Shippori+Mincho:wght@400;600;800&display=swap');
+
+  :root {
+    --gold: #b8936a;
+    --gold-light: #e8c99a;
+    --warm: #2e2018;
+    --cream: #f5efe6;
+    --cream-dark: #ede3d4;
+    --ink: #3a2e22;
+    --muted: #8a7a68;
+    --neg: #7a5a6a;
+    --pos: #4a7a64;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: var(--cream);
+    color: var(--ink);
+    font-family: 'Noto Serif JP', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 20px 90px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image:
+      radial-gradient(ellipse at 15% 15%, rgba(184,147,106,0.09) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 85%, rgba(74,122,100,0.06) 0%, transparent 55%);
+    pointer-events: none; z-index: 0;
+  }
+
+  .container { max-width: 660px; width: 100%; position: relative; z-index: 1; }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 48px; animation: fadeDown 0.9s ease both; }
+  .header-label { font-size: 10px; letter-spacing: 0.35em; color: var(--gold); text-transform: uppercase; margin-bottom: 14px; opacity: 0.9; }
+  h1 { font-family: 'Shippori Mincho', serif; font-size: clamp(22px, 5.5vw, 34px); font-weight: 800; letter-spacing: 0.12em; color: var(--warm); line-height: 1.55; }
+  h1 .accent { color: var(--gold); }
+  .header-line { width: 56px; height: 1.5px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 18px auto 0; }
+
+  /* Scale */
+  .scale-scene { display: flex; justify-content: center; margin-bottom: 44px; animation: fadeUp 1s ease 0.15s both; }
+  .scale-svg { width: 100%; max-width: 400px; filter: drop-shadow(0 4px 18px rgba(184,147,106,0.2)); }
+  .scale-beam { animation: tilt 4.5s ease-in-out infinite alternate; transform-origin: 200px 72px; }
+  .pan-l { animation: panUp 4.5s ease-in-out infinite alternate; }
+  .pan-r { animation: panDn 4.5s ease-in-out infinite alternate; }
+  @keyframes tilt { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+  @keyframes panUp { from { transform: translateY(-9px); } to { transform: translateY(9px); } }
+  @keyframes panDn { from { transform: translateY(9px); } to { transform: translateY(-9px); } }
+
+  /* Philosophy */
+  .philosophy { background: linear-gradient(135deg, var(--warm) 0%, #3d2c1a 100%); border-radius: 18px; padding: 34px 32px; margin-bottom: 44px; color: var(--cream); position: relative; overflow: hidden; animation: fadeUp 1s ease 0.25s both; }
+  .philosophy::after { content: '⚖️'; position: absolute; right: -8px; top: -12px; font-size: 110px; opacity: 0.055; transform: rotate(-12deg); line-height: 1; pointer-events: none; }
+  .philosophy p { font-family: 'Shippori Mincho', serif; font-size: clamp(14px, 3.5vw, 18px); font-weight: 600; line-height: 2.15; letter-spacing: 0.09em; position: relative; z-index: 1; }
+  .philosophy p em { color: var(--gold-light); font-style: normal; }
+
+  /* Section title */
+  .section-title { text-align: center; margin-bottom: 28px; }
+  .section-title .en { font-size: 10px; letter-spacing: 0.32em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px; }
+  .section-title h2 { font-family: 'Shippori Mincho', serif; font-size: clamp(16px, 4vw, 22px); font-weight: 700; color: var(--warm); letter-spacing: 0.1em; }
+
+  /* Fixed 3 example cards */
+  .balance-list { display: flex; flex-direction: column; gap: 18px; animation: fadeUp 1s ease 0.45s both; }
+  .balance-card { background: #fff; border-radius: 16px; border: 1px solid var(--cream-dark); overflow: hidden; box-shadow: 0 2px 12px rgba(58,46,34,0.055); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .balance-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(58,46,34,0.11); }
+  .card-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; min-height: 96px; }
+  .side { padding: 22px 20px; }
+  .side-neg { background: rgba(122,90,106,0.06); }
+  .side-pos { background: rgba(74,122,100,0.07); text-align: right; }
+  .side-tag { font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 7px; display: block; }
+  .side-neg .side-tag { color: var(--neg); opacity: 0.7; }
+  .side-pos .side-tag { color: var(--pos); opacity: 0.7; }
+  .keyword-tag { display: inline-block; background: rgba(122,90,106,0.13); border-radius: 4px; font-size: 10px; color: var(--neg); padding: 1px 7px; margin-bottom: 7px; letter-spacing: 0.1em; }
+  .side-text { font-family: 'Shippori Mincho', serif; font-size: clamp(13px, 3vw, 16px); font-weight: 600; line-height: 1.65; letter-spacing: 0.04em; }
+  .side-neg .side-text { color: var(--neg); }
+  .side-pos .side-text { color: var(--pos); }
+  .pivot { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 0 12px; flex-shrink: 0; }
+  .pivot-icon { font-size: 19px; line-height: 1; }
+  .pivot-arrow { font-size: 14px; color: var(--gold); line-height: 1; }
+
+  /* Divider */
+  .divider { display: flex; align-items: center; gap: 14px; margin: 44px 0; }
+  .divider-line { flex: 1; height: 1px; background: var(--cream-dark); }
+  .divider-em { font-size: 18px; }
+
+  /* ── BALANCE MAKER APP ── */
+  .app-section { animation: fadeUp 1s ease 0.5s both; }
+  .app-box { background: #fff; border-radius: 24px; border: 1px solid var(--cream-dark); box-shadow: 0 4px 24px rgba(58,46,34,0.08); overflow: hidden; }
+  .app-header { background: linear-gradient(135deg, #3d2c1a 0%, var(--warm) 100%); padding: 22px 28px 20px; position: relative; overflow: hidden; }
+  .app-header::after { content: '⚖️'; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font-size: 52px; opacity: 0.1; pointer-events: none; }
+  .app-header-label { font-size: 9px; letter-spacing: 0.35em; color: var(--gold-light); text-transform: uppercase; margin-bottom: 5px; opacity: 0.8; }
+  .app-header h3 { font-family: 'Shippori Mincho', serif; font-size: clamp(15px, 3.8vw, 20px); font-weight: 700; color: var(--cream); letter-spacing: 0.1em; }
+
+  /* Progress */
+  .app-progress-wrap { padding: 20px 28px 10px; }
+  .app-progress-bar { height: 5px; background: var(--cream-dark); border-radius: 10px; overflow: hidden; margin-bottom: 8px; }
+  .app-progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--pos)); border-radius: 10px; width: 0%; transition: width 0.5s ease; }
+  .app-progress-label { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--muted); letter-spacing: 0.12em; }
+  .app-progress-label strong { font-family: 'Shippori Mincho', serif; color: var(--gold); font-size: 14px; }
+  .resume-badge { font-size: 9.5px; background: rgba(184,147,106,0.15); color: var(--gold); border: 1px solid rgba(184,147,106,0.3); border-radius: 20px; padding: 2px 9px; letter-spacing: 0.1em; }
+
+  /* Display */
+  .app-display { padding: 32px 28px 20px; min-height: 210px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .display-pair { width: 100%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0; opacity: 0; transform: translateY(10px); transition: opacity 0.45s ease, transform 0.45s ease; position: relative; padding-top: 22px; }
+  .display-pair.visible { opacity: 1; transform: translateY(0); }
+
+  /* Number badge */
+  .display-num { position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: var(--gold); color: #fff; font-family: 'Shippori Mincho', serif; font-size: 11px; font-weight: 700; padding: 3px 14px; border-radius: 20px; letter-spacing: 0.14em; white-space: nowrap; }
+
+  .display-neg, .display-pos { padding: 20px 16px; border-radius: 14px; text-align: center; }
+  .display-neg { background: rgba(122,90,106,0.07); border: 1.5px solid rgba(122,90,106,0.15); text-align: center; }
+  .display-pos { background: rgba(74,122,100,0.08); border: 1.5px solid rgba(74,122,100,0.18); text-align: center; }
+  .display-label { font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 8px; display: block; }
+  .display-neg .display-label { color: var(--neg); opacity: 0.65; }
+  .display-pos .display-label { color: var(--pos); opacity: 0.65; }
+  .display-keyword { display: inline-block; font-size: 9.5px; padding: 1px 7px; border-radius: 4px; margin-bottom: 8px; letter-spacing: 0.12em; background: rgba(122,90,106,0.12); color: var(--neg); }
+  .display-word { font-family: 'Shippori Mincho', serif; font-size: clamp(13px, 3.2vw, 17px); font-weight: 700; line-height: 1.6; letter-spacing: 0.04em; }
+  .display-neg .display-word { color: var(--neg); }
+  .display-pos .display-word { color: var(--pos); }
+  .display-pivot { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0 10px; flex-shrink: 0; }
+  .display-pivot .pi { font-size: 20px; }
+  .display-pivot .pa { font-size: 13px; color: var(--gold); }
+
+  /* Empty */
+  .empty-state { text-align: center; padding: 20px; opacity: 0.45; }
+  .empty-state .ei { font-size: 36px; margin-bottom: 10px; display: block; }
+  .empty-state p { font-size: 13px; color: var(--muted); letter-spacing: 0.1em; font-family: 'Shippori Mincho', serif; }
+
+  /* Nav buttons */
+  .app-nav { display: flex; align-items: center; gap: 10px; padding: 8px 28px 20px; }
+  .btn-nav { flex: 1; padding: 11px 8px; background: var(--cream); border: 1.5px solid var(--cream-dark); border-radius: 50px; font-family: 'Noto Serif JP', serif; font-size: 12px; color: var(--muted); letter-spacing: 0.12em; cursor: pointer; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+  .btn-nav:hover { border-color: var(--gold); color: var(--gold); background: rgba(184,147,106,0.05); }
+  .btn-nav:disabled { opacity: 0.35; pointer-events: none; }
+  .btn-main { flex: 2; padding: 14px 20px; background: linear-gradient(135deg, var(--warm) 0%, #4a3020 100%); color: var(--cream); border: none; border-radius: 50px; font-family: 'Shippori Mincho', serif; font-size: clamp(14px, 3.5vw, 16px); font-weight: 700; letter-spacing: 0.15em; cursor: pointer; box-shadow: 0 4px 16px rgba(46,32,24,0.22); transition: transform 0.18s, box-shadow 0.18s; }
+  .btn-main:hover { transform: translateY(-2px); box-shadow: 0 7px 22px rgba(46,32,24,0.3); }
+  .btn-main:active { transform: translateY(0); }
+  .btn-main:disabled { opacity: 0.6; pointer-events: none; }
+
+  /* Number search */
+  .num-search { margin: 0 28px 20px; padding: 16px 18px; background: var(--cream); border-radius: 14px; border: 1px solid var(--cream-dark); }
+  .num-search-label { font-size: 10px; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+  .num-search-row { display: flex; gap: 8px; }
+  .num-input { flex: 1; padding: 10px 14px; border: 1.5px solid var(--cream-dark); border-radius: 10px; font-family: 'Shippori Mincho', serif; font-size: 15px; font-weight: 700; color: var(--ink); background: #fff; text-align: center; outline: none; transition: border-color 0.2s; }
+  .num-input:focus { border-color: var(--gold); }
+  .btn-jump { padding: 10px 18px; background: var(--warm); color: var(--cream); border: none; border-radius: 10px; font-family: 'Shippori Mincho', serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; cursor: pointer; transition: background 0.2s; white-space: nowrap; }
+  .btn-jump:hover { background: #4a3020; }
+  .num-error { font-size: 11px; color: var(--neg); margin-top: 6px; min-height: 16px; letter-spacing: 0.1em; }
+
+  /* History */
+  .history-wrap { padding: 0 28px 24px; }
+  .history-title-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .history-title { font-size: 10px; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; }
+  .btn-hist-clear { font-size: 10px; font-family: 'Noto Serif JP', serif; color: var(--muted); background: none; border: 1px solid var(--cream-dark); border-radius: 20px; padding: 2px 10px; letter-spacing: 0.1em; cursor: pointer; transition: color 0.2s, border-color 0.2s; }
+  .btn-hist-clear:hover { color: var(--neg); border-color: rgba(122,90,106,0.35); }
+  .history-strip { display: flex; flex-wrap: wrap; gap: 7px; }
+  .hist-chip { font-size: 10px; font-family: 'Shippori Mincho', serif; padding: 4px 10px; border-radius: 20px; background: rgba(122,90,106,0.08); color: var(--neg); border: 1px solid rgba(122,90,106,0.15); letter-spacing: 0.08em; cursor: pointer; transition: background 0.2s, transform 0.15s; }
+  .hist-chip:hover { background: rgba(122,90,106,0.15); transform: translateY(-1px); }
+  .hist-chip .chip-num { font-size: 8.5px; opacity: 0.65; margin-right: 2px; }
+
+  /* ── モード切り替えトグル ── */
+  .mode-toggle-wrap { padding: 16px 28px 4px; display: flex; align-items: center; gap: 0; background: var(--cream); border-bottom: 1px solid var(--cream-dark); }
+  .mode-toggle { display: flex; background: var(--cream-dark); border-radius: 50px; padding: 3px; gap: 3px; width: 100%; }
+  .mode-btn { flex: 1; padding: 9px 12px; border: none; border-radius: 50px; font-family: 'Shippori Mincho', serif; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; cursor: pointer; transition: background 0.25s, color 0.25s, box-shadow 0.25s; background: transparent; color: var(--muted); }
+  .mode-btn.active { background: #fff; color: var(--warm); box-shadow: 0 2px 8px rgba(58,46,34,0.12); }
+
+  /* ── 響いた ボタン ── */
+  .btn-fav-wrap { display: flex; justify-content: center; padding: 0 28px 20px; }
+  .btn-fav { display: flex; align-items: center; gap: 7px; padding: 11px 28px; background: #fff; border: 2px solid var(--gold); border-radius: 50px; font-family: 'Shippori Mincho', serif; font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: 0.15em; cursor: pointer; transition: background 0.2s, color 0.2s, transform 0.18s, box-shadow 0.18s; box-shadow: 0 2px 10px rgba(184,147,106,0.12); }
+  .btn-fav:hover { background: rgba(184,147,106,0.08); transform: translateY(-2px); box-shadow: 0 5px 18px rgba(184,147,106,0.22); }
+  .btn-fav.active { background: linear-gradient(135deg, #c9a07a, var(--gold)); color: #fff; border-color: transparent; box-shadow: 0 4px 16px rgba(184,147,106,0.38); }
+  .btn-fav .fav-icon { font-size: 16px; transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+  .btn-fav.active .fav-icon { transform: scale(1.35); }
+
+  /* ── お気に入りセクション ── */
+  .fav-section { margin-top: 12px; animation: fadeUp 0.7s ease both; }
+  .fav-box { background: #fff; border-radius: 24px; border: 1.5px solid rgba(184,147,106,0.3); box-shadow: 0 4px 24px rgba(184,147,106,0.1); overflow: hidden; }
+  .fav-header { background: linear-gradient(135deg, #c9a07a 0%, var(--gold) 100%); padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; }
+  .fav-header-left { display: flex; flex-direction: column; gap: 3px; }
+  .fav-header-label { font-size: 9px; letter-spacing: 0.35em; color: rgba(255,255,255,0.75); text-transform: uppercase; }
+  .fav-header h3 { font-family: 'Shippori Mincho', serif; font-size: clamp(14px, 3.5vw, 18px); font-weight: 700; color: #fff; letter-spacing: 0.1em; }
+  .fav-count { font-family: 'Shippori Mincho', serif; font-size: 28px; font-weight: 800; color: #fff; opacity: 0.9; line-height: 1; }
+
+  .fav-empty { text-align: center; padding: 32px 20px; opacity: 0.45; }
+  .fav-empty .fei { font-size: 32px; margin-bottom: 8px; display: block; }
+  .fav-empty p { font-size: 12px; color: var(--muted); letter-spacing: 0.12em; font-family: 'Shippori Mincho', serif; }
+
+  .fav-list { display: flex; flex-direction: column; gap: 0; }
+  .fav-item { display: grid; grid-template-columns: 38px 1fr auto; align-items: center; gap: 0; padding: 16px 20px; border-bottom: 1px solid var(--cream-dark); cursor: pointer; transition: background 0.2s; }
+  .fav-item:last-child { border-bottom: none; }
+  .fav-item:hover { background: rgba(184,147,106,0.04); }
+  .fav-item-num { font-family: 'Shippori Mincho', serif; font-size: 10px; font-weight: 700; color: var(--gold); opacity: 0.8; letter-spacing: 0.08em; }
+  .fav-item-body { display: flex; flex-direction: column; gap: 4px; }
+  .fav-item-kw { font-family: 'Shippori Mincho', serif; font-size: 13px; font-weight: 700; color: var(--ink); letter-spacing: 0.06em; }
+  .fav-item-pos { font-size: 11px; color: var(--pos); letter-spacing: 0.06em; line-height: 1.5; }
+  .fav-item-del { font-size: 14px; color: var(--muted); opacity: 0.45; cursor: pointer; padding: 4px 6px; border-radius: 50%; transition: opacity 0.2s, background 0.2s; border: none; background: none; }
+  .fav-item-del:hover { opacity: 1; background: rgba(122,90,106,0.1); color: var(--neg); }
+
+  /* Bottom message */
+  .bottom-msg { text-align: center; margin-top: 48px; animation: fadeUp 1s ease 0.65s both; }
+  .bottom-msg .big { font-family: 'Shippori Mincho', serif; font-size: clamp(15px, 3.8vw, 20px); font-weight: 700; color: var(--warm); line-height: 2.1; letter-spacing: 0.1em; margin-bottom: 18px; }
+  .bottom-msg .big em { color: var(--gold); font-style: normal; }
+  .bottom-msg .sub { font-size: 12.5px; color: var(--muted); line-height: 2.1; letter-spacing: 0.08em; }
+
+  .copyright { position: fixed; bottom: 16px; right: 20px; font-size: 10.5px; color: var(--muted); letter-spacing: 0.06em; opacity: 0.65; z-index: 100; }
+
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-18px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ── その他の無料アプリ アコーディオン ── */
+  .other-apps-accordion {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1.5px solid var(--cream-dark);
+    box-shadow: 0 2px 12px rgba(58,46,34,0.06);
+    animation: fadeUp 1s ease 0.55s both;
+  }
+  .other-apps-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 22px;
+    background: linear-gradient(135deg, var(--warm) 0%, #4a3020 100%);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    gap: 10px;
+  }
+  .other-apps-toggle:hover { opacity: 0.92; }
+  .other-apps-toggle-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .other-apps-toggle-icon { font-size: 18px; line-height: 1; }
+  .other-apps-toggle-text {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(13px, 3.2vw, 16px);
+    font-weight: 700;
+    color: var(--cream);
+    letter-spacing: 0.12em;
+  }
+  .other-apps-chevron {
+    font-size: 12px;
+    color: var(--gold-light);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  .other-apps-chevron.open { transform: rotate(180deg); }
+
+  .other-apps-body {
+    background: #fff;
+    padding: 20px 18px 18px;
+  }
+  .other-apps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .app-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 14px 10px 12px;
+    background: var(--cream);
+    border: 1.5px solid var(--cream-dark);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
+    cursor: pointer;
+  }
+  .app-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(58,46,34,0.12);
+    border-color: var(--gold);
+    background: rgba(184,147,106,0.06);
+  }
+  .app-btn--current {
+    border-color: rgba(184,147,106,0.5);
+    background: rgba(184,147,106,0.07);
+    opacity: 0.75;
+    pointer-events: none;
+  }
+  .app-btn-emoji { font-size: 22px; line-height: 1.2; }
+  .app-btn-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: 0.06em;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .app-btn-sub {
+    font-size: 9.5px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 480px) {
+    .card-inner { grid-template-columns: 1fr; }
+    .pivot { flex-direction: row; justify-content: center; padding: 6px 20px; border-top: 1px dashed var(--cream-dark); border-bottom: 1px dashed var(--cream-dark); }
+    .pivot-arrow { transform: rotate(90deg); }
+    .side-pos { text-align: left; }
+    .philosophy { padding: 26px 20px; }
+    .display-pair { grid-template-columns: 1fr; gap: 10px; }
+    .display-pivot { flex-direction: row; }
+    .display-pivot .pa { transform: rotate(90deg); }
+    .app-display { padding: 24px 16px 16px; }
+    .app-controls { padding: 12px 20px 24px; }
+    .history-strip { padding: 0 20px 20px; }
+  }
+
+  /* ── Language Switcher ── */
+  .lang-switcher {
+    position: fixed;
+    top: 12px;
+    right: 14px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .lang-label {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    text-transform: uppercase;
+    opacity: 0.6;
+    pointer-events: none;
+    user-select: none;
+  }
+  .lang-widget {
+    position: relative;
+  }
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 4px 9px;
+    background: rgba(245,239,230,0.88);
+    border: 1px solid var(--cream-dark);
+    border-radius: 50px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--warm);
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(58,46,34,0.10);
+    backdrop-filter: blur(6px);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  #langBtnFlag { font-size: 13px; line-height: 1; }
+  .lang-btn:hover { border-color: var(--gold); box-shadow: 0 3px 12px rgba(184,147,106,0.22); }
+  .lang-btn.open { border-color: var(--gold); border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
+  .lang-dropdown {
+    position: absolute;
+    top: calc(100% + 2px);
+    right: 0;
+    background: rgba(245,239,230,0.97);
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(58,46,34,0.13);
+    backdrop-filter: blur(8px);
+    min-width: 80px;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.28s ease, opacity 0.22s ease;
+  }
+  .lang-dropdown.open {
+    max-height: 200px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--warm);
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background 0.15s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+  .lang-option:hover { background: rgba(184,147,106,0.1); }
+  .lang-option.active { color: var(--gold); }
+  .lang-option .lo-flag { font-size: 13px; line-height: 1; }
+  /* JP option accordions inside the open dropdown */
+  .lang-option-jp {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.22s ease 0.06s;
+  }
+  .lang-dropdown.open .lang-option-jp {
+    max-height: 60px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Language Switcher -->
+<div class="lang-switcher" id="langSwitcher">
+  <span class="lang-label">Lang</span>
+  <div class="lang-widget">
+    <button class="lang-btn" id="langBtn" onclick="toggleLangMenu()">
+      <span id="langBtnFlag">🇯🇵</span>
+      <span id="langBtnLabel">JP</span>
+      <span style="font-size:9px;opacity:0.6;margin-left:2px">▼</span>
+    </button>
+    <div class="lang-dropdown" id="langDropdown">
+      <button class="lang-option" id="optJP" onclick="setLang('jp')">
+        <span class="lo-flag">🇯🇵</span>JP
+      </button>
+      <div class="lang-option-jp">
+        <button class="lang-option" id="optEN" onclick="setLang('en')">
+          <span class="lo-flag">🌍</span>EN
+        </button>
+      </div>
+      <div class="lang-option-jp">
+        <button class="lang-option" id="optKR" onclick="setLang('kr')">
+          <span class="lo-flag">🇰🇷</span>KO
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <p class="header-label">Balance Training</p>
+    <h1>Word &amp; Mental<br><span class="accent">Balance Training</span></h1>
+    <div class="header-line"></div>
+  </header>
+
+  <!-- ═══════════════════════════
+       BALANCE MAKER APP
+  ═══════════════════════════ -->
+  <div class="app-section">
+    <div class="app-box">
+
+      <div class="app-header">
+        <div class="app-header-label" id="appHeaderLabel">Balance Maker — Sequential Mode</div>
+        <h3 id="appHeaderTitle">⚖️ Balance Maker</h3>
+      </div>
+
+      <!-- モード切り替え -->
+      <div class="mode-toggle-wrap">
+        <div class="mode-toggle">
+          <button class="mode-btn active" id="modeSeq" onclick="setMode('seq')">📋 Sequential</button>
+          <button class="mode-btn" id="modeRnd" onclick="setMode('rnd')">🎲 Random</button>
+        </div>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="app-progress-wrap">
+        <div class="app-progress-bar"><div class="app-progress-fill" id="progressFill"></div></div>
+        <div class="app-progress-label">
+          <span id="progressSpan">No. <strong id="curNumLabel">—</strong> / 100</span>
+
+          <span id="resumeLabel" class="resume-badge" style="display:none">📌 Resuming</span>
+        </div>
+      </div>
+
+      <!-- Display pair -->
+      <div class="app-display">
+        <div class="empty-state" id="emptyState">
+          <span class="ei">⚖️</span>
+          <p id="emptyMsg">Press "Next" to start from No.1</p>
+        </div>
+        <div class="display-pair" id="displayPair">
+          <div class="display-num" id="dispNum"></div>
+          <div class="display-neg">
+            <span class="display-label">Negative</span>
+            <div class="display-keyword" id="dispKeyword"></div>
+            <div class="display-word" id="dispNeg"></div>
+          </div>
+          <div class="display-pivot">
+            <span class="pi">⚖️</span>
+            <span class="pa">▶</span>
+          </div>
+          <div class="display-pos">
+            <span class="display-label">Balance</span>
+            <div class="display-word" id="dispPos"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav buttons -->
+      <div class="app-nav">
+        <button class="btn-nav" id="btnPrev" onclick="goPrev()" disabled>◀ Prev</button>
+        <button class="btn-main" id="btnNext" onclick="goNext()">Next ▶</button>
+        <button class="btn-nav" id="btnReset" onclick="resetAll()">Restart</button>
+      </div>
+
+      <!-- 響いた ボタン -->
+      <div class="btn-fav-wrap">
+        <button class="btn-fav" id="btnFav" onclick="toggleFav()">
+          <span class="fav-icon">☆</span>
+          <span id="btnFavLabel">Mark as resonant…</span>
+        </button>
+      </div>
+
+      <!-- Number search -->
+      <div class="num-search" id="numSearchWrap">
+        <div class="num-search-label">🔍 Jump to number</div>
+        <div class="num-search-row">
+          <input type="number" id="numInput" class="num-input" min="1" max="100" placeholder="1–100">
+          <button class="btn-jump" onclick="jumpTo()">⚖️ GO</button>
+        </div>
+        <div class="num-error" id="numError"></div>
+      </div>
+
+      <!-- History chips -->
+      <div class="history-wrap" id="historyWrap" style="display:none">
+        <div class="history-title-row">
+          <span class="history-title">Practice History (tap to revisit)</span>
+          <button class="btn-hist-clear" onclick="clearHistory()">Clear all</button>
+        </div>
+        <div class="history-strip" id="historyStrip"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- その他の無料アプリ アコーディオン -->
+  <div class="other-apps-accordion" id="otherAppsAccordion">
+    <button class="other-apps-toggle" onclick="toggleOtherApps()" aria-expanded="false" id="otherAppsToggle">
+      <span class="other-apps-toggle-left">
+        <span class="other-apps-toggle-icon">🎁</span>
+        <span class="other-apps-toggle-text">See other free apps</span>
+      </span>
+      <span class="other-apps-chevron" id="otherAppsChevron">▼</span>
+    </button>
+    <div class="other-apps-body" id="otherAppsBody" style="display:none;">
+      <div class="other-apps-grid">
+        <a href="https://sintaichoseijyuku.pages.dev/" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">💃</span>
+          <span class="app-btn-title">Shintai Balance School 💃</span>
+          <span class="app-btn-sub">Website</span>
+        </a>
+        <a href="https://lit.link/aitakeshi" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">🙋</span>
+          <span class="app-btn-title">All My Apps in One Place 🙋</span>
+          <span class="app-btn-sub">(Japanese)</span>
+        </a>
+        <a href="https://warainpic.pages.dev" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">ꉂ🤣𐤔</span>
+          <span class="app-btn-title">Baka-Uke 5W1H ꉂ🤣𐤔</span>
+          <span class="app-btn-sub">The Olympics of Laughter 🏅</span>
+        </a>
+        <a href="https://bakaukesenryu.pages.dev" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">🎋</span>
+          <span class="app-btn-title">Baka-Uke Senryu 🎋</span>
+          <span class="app-btn-sub">Hilarious 5-7-5 Gacha ꉂ🤣𐤔</span>
+        </a>
+        <a href="https://kamimikuji.pages.dev" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">🔥☔🎋</span>
+          <span class="app-btn-title">Fire & Water Fortune 🔥☔🎋</span>
+          <span class="app-btn-sub">Live More Comfortably as Yourself 👍</span>
+        </a>
+        <a href="https://zangeforgive.pages.dev" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">🕯️</span>
+          <span class="app-btn-title">ZANGE Confession 🕯️</span>
+          <span class="app-btn-sub">Forgive Yourself & Feel Lighter</span>
+        </a>
+        <a href="https://openhearttraining.pages.dev" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">☯️</span>
+          <span class="app-btn-title">Open Heart Training ☯️</span>
+          <span class="app-btn-sub">Transform Your Life</span>
+        </a>
+        <a href="https://balancetraning.pages.dev/" target="_blank" class="app-btn app-btn--current">
+          <span class="app-btn-emoji">⚖️</span>
+          <span class="app-btn-title">Words & Mental Balance Training ⚖️</span>
+          <span class="app-btn-sub">← Here now</span>
+        </a>
+        <a href="https://kamisindan.pages.dev" target="_blank" class="app-btn">
+          <span class="app-btn-emoji">🔥☔</span>
+          <span class="app-btn-title">Fire & Water Personality Test 🔥☔</span>
+          <span class="app-btn-sub">12 Character Types ✏💃</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- お気に入り（響いた）セクション -->
+  <div class="fav-section" id="favSection" style="display:none; margin-bottom: 44px;">
+    <div class="fav-box">
+      <div class="fav-header">
+        <div class="fav-header-left">
+          <span class="fav-header-label">My Favourites</span>
+          <h3>⭐ Words that resonated</h3>
+        </div>
+        <div class="fav-count" id="favCount">0</div>
+      </div>
+      <div id="favEmpty" class="fav-empty">
+        <span class="fei">☆</span>
+        <p>When a word resonates during practice,<br>tap the button to save it</p>
+      </div>
+      <div class="fav-list" id="favList"></div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-em">⚖️</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- Scale SVG -->
+  <div class="scale-scene">
+    <svg class="scale-svg" viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg">
+      <rect x="183" y="188" width="34" height="14" rx="3" fill="#b8936a" opacity="0.65"/>
+      <rect x="163" y="199" width="74" height="7" rx="3.5" fill="#b8936a" opacity="0.45"/>
+      <rect x="198" y="72" width="4" height="117" rx="2" fill="#b8936a"/>
+      <circle cx="200" cy="72" r="7" fill="#b8936a"/>
+      <circle cx="200" cy="72" r="3.5" fill="#f5efe6"/>
+      <g class="scale-beam">
+        <rect x="65" y="69" width="270" height="6" rx="3" fill="#8a7a68"/>
+        <circle cx="87" cy="72" r="4" fill="#b8936a" opacity="0.55"/>
+        <circle cx="313" cy="72" r="4" fill="#b8936a" opacity="0.55"/>
+        <g class="pan-l">
+          <line x1="87" y1="75" x2="87" y2="118" stroke="#b8936a" stroke-width="1.4" stroke-dasharray="3,2.5"/>
+          <rect x="51" y="118" width="72" height="7" rx="3.5" fill="#7a5a6a" opacity="0.75"/>
+          <text x="87" y="142" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="12" font-weight="700" fill="#7a5a6a" letter-spacing="1.5">ネガティブ</text>
+          <text x="87" y="157" text-anchor="middle" font-family="'Noto Serif JP',serif" font-size="8.5" fill="#8a7a68" letter-spacing="1" opacity="0.7">Negative</text>
+        </g>
+        <g class="pan-r">
+          <line x1="313" y1="75" x2="313" y2="118" stroke="#b8936a" stroke-width="1.4" stroke-dasharray="3,2.5"/>
+          <rect x="277" y="118" width="72" height="7" rx="3.5" fill="#4a7a64" opacity="0.75"/>
+          <text x="313" y="142" text-anchor="middle" font-family="'Shippori Mincho',serif" font-size="12" font-weight="700" fill="#4a7a64" letter-spacing="1.5">ポジティブ</text>
+          <text x="313" y="157" text-anchor="middle" font-family="'Noto Serif JP',serif" font-size="8.5" fill="#8a7a68" letter-spacing="1" opacity="0.7">Positive</text>
+        </g>
+      </g>
+      <text x="200" y="64" text-anchor="middle" font-size="19">⚖️</text>
+    </svg>
+  </div>
+
+  <!-- Philosophy -->
+  <div class="philosophy">
+    <p>
+      Don't <em>erase</em> the negative words—<br>
+      <em>counterbalance</em> them with positive ones.<br>
+      Hold both, and <em>balance</em> them—<br>
+      that's how true stability grows.
+    </p>
+  </div>
+
+  <!-- Example cards -->
+  <div class="section-title">
+    <span class="en">Training Examples</span>
+    <h2>⚖️ Balance Training Examples</h2>
+  </div>
+
+  <div class="balance-list">
+    <div class="balance-card">
+      <div class="card-inner">
+        <div class="side side-neg"><span class="keyword-tag">Crybaby</span><div class="side-text">Crying is embarrassing</div></div>
+        <div class="pivot"><span class="pivot-icon">⚖️</span><span class="pivot-arrow">▶</span></div>
+        <div class="side side-pos"><span class="side-tag">Balance</span><div class="side-text">Tears are beautiful</div></div>
+      </div>
+    </div>
+    <div class="balance-card">
+      <div class="card-inner">
+        <div class="side side-neg"><span class="keyword-tag">Chubby</span><div class="side-text">Overweight and unsightly</div></div>
+        <div class="pivot"><span class="pivot-icon">⚖️</span><span class="pivot-arrow">▶</span></div>
+        <div class="side side-pos"><span class="side-tag">Balance</span><div class="side-text">Chubby and adorable</div></div>
+      </div>
+    </div>
+    <div class="balance-card">
+      <div class="card-inner">
+        <div class="side side-neg"><span class="keyword-tag">Coward</span><div class="side-text">Weak and pathetic</div></div>
+        <div class="pivot"><span class="pivot-icon">⚖️</span><span class="pivot-arrow">▶</span></div>
+        <div class="side side-pos"><span class="side-tag">Balance</span><div class="side-text">Sensitive enough to understand kindness</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="bottom-msg">
+    <div class="big">
+      Not conversion. Not erasure.<br>
+      <em>Hold both sides, without bias.</em><br>
+      That is balance.
+    </div>
+    <p class="sub">
+      Negative words don't need to disappear.<br>
+      Placing a positive perspective beside them<br>
+      tips the scales—and steadies the mind.
+    </p>
+  </div>
+
+</div>
+
+<div class="copyright">©︎ Takechan</div>
+
+<script>
+// ═══════════════════════════════════════════════
+// 100語 バランスデータ（順番固定・No.1〜100）
+// ═══════════════════════════════════════════════
+const data = [
+  // No.1〜10 外見・体型
+  { kw:"デブ",           neg:"太ってて見苦しい",                   pos:"ポッチャリしてかわいい",             kwEn:"Chubby",         negEn:"Overweight and unsightly",                   posEn:"Chubby and adorable",                          kwKr:"뚱뚱이",       negKr:"살쪄서 보기 싫다",                       posKr:"통통하고 귀엽다" },
+  { kw:"チビ",           neg:"背が低くてみっともない",               pos:"小柄で愛らしい",                     kwEn:"Shorty",         negEn:"Too short and embarrassing",                  posEn:"Petite and charming",                          kwKr:"키 작은이",     negKr:"키 작아서 꼴사납다",                     posKr:"작고 사랑스럽다" },
+  { kw:"ガリガリ",       neg:"細すぎて貧相に見える",                 pos:"スレンダーで洗練されている",         kwEn:"Beanpole",       negEn:"Too skinny and looking frail",                posEn:"Slender and elegant",                          kwKr:"깡마른이",      negKr:"너무 말라서 초라해 보인다",               posKr:"날씬하고 세련되어 있다" },
+  { kw:"ブサイク",       neg:"顔が悪くて損している",                 pos:"個性的な顔は記憶に残る",             kwEn:"Ugly",           negEn:"Bad looks put me at a disadvantage",          posEn:"A distinctive face stays in people's memory",  kwKr:"못생긴이",      negKr:"못생겨서 손해를 본다",                   posKr:"개성 있는 얼굴은 기억에 남는다" },
+  { kw:"のっぽ",         neg:"背が高すぎて目立つ",                   pos:"存在感があって頼もしい",             kwEn:"Beanstalk",      negEn:"Too tall and it draws unwanted attention",    posEn:"Commanding presence and reliable",             kwKr:"장신",          negKr:"키가 너무 커서 눈에 띈다",               posKr:"존재감 있고 믿음직스럽다" },
+  { kw:"ちんちくりん",   neg:"バランスが悪い",                       pos:"独自のかわいさがある",               kwEn:"Odd-shaped",     negEn:"Poorly proportioned",                         posEn:"Uniquely cute in my own way",                  kwKr:"불균형한 몸",   negKr:"균형이 안 맞는다",                       posKr:"나만의 귀여움이 있다" },
+  { kw:"色黒",           neg:"日焼けして汚らしい",                   pos:"健康的で生命力があふれる",           kwEn:"Dark-skinned",   negEn:"Tanned and looking dirty",                    posEn:"Healthy and full of vitality",                 kwKr:"피부 검은이",   negKr:"그을려서 더러워 보인다",                 posKr:"건강하고 생명력이 넘친다" },
+  { kw:"色白",           neg:"顔色が悪く見える",                     pos:"透き通るような美しさがある",         kwEn:"Pale-skinned",   negEn:"Looks like poor complexion",                  posEn:"A translucent, delicate beauty",               kwKr:"피부 하얀이",   negKr:"안색이 안 좋아 보인다",                 posKr:"투명한 아름다움이 있다" },
+  { kw:"そばかす",       neg:"肌が汚い",                             pos:"チャーミングな個性だ",               kwEn:"Freckles",       negEn:"Skin looks messy",                            posEn:"A charming and unique feature",                kwKr:"주근깨",        negKr:"피부가 지저분하다",                       posKr:"매력적인 개성이다" },
+  { kw:"天パ",           neg:"髪がぐねぐねして変",                   pos:"天然のくせ毛がおしゃれ",             kwEn:"Curly hair",     negEn:"Hair is wavy and looks weird",                posEn:"Natural curls are stylish and cool",           kwKr:"곱슬머리",      negKr:"머리가 꼬불꼬불해서 이상하다",           posKr:"천연 곱슬이 멋스럽다" },
+
+  // No.11〜20 性格・感情
+  { kw:"泣き虫",         neg:"泣くのは恥ずかしい",                   pos:"涙は美しい",                         kwEn:"Crybaby",        negEn:"Crying is embarrassing",                      posEn:"Tears are beautiful",                          kwKr:"울보",          negKr:"우는 건 창피하다",                       posKr:"눈물은 아름답다" },
+  { kw:"弱虫",           neg:"弱くて情けないな",                     pos:"繊細でやさしさがわかる",             kwEn:"Coward",         negEn:"Weak and pathetic",                           posEn:"Sensitive enough to understand kindness",      kwKr:"겁쟁이",        negKr:"약하고 한심하다",                         posKr:"섬세해서 다정함을 안다" },
+  { kw:"意気地なし",     neg:"何もできない情けない人",               pos:"慎重で思慮深い人",                   kwEn:"Spineless",      negEn:"Can't do anything — pitiful",                 posEn:"Careful and deeply thoughtful",                kwKr:"용기 없는이",   negKr:"아무것도 못하는 한심한 사람",             posKr:"신중하고 사려 깊은 사람" },
+  { kw:"怠け者",         neg:"何もしない役立たず",                   pos:"エネルギーをためて動く人",           kwEn:"Lazy",           negEn:"Does nothing — totally useless",              posEn:"Storing energy to move at the right time",     kwKr:"게으름뱅이",    negKr:"아무것도 안 하는 쓸모없는 이",           posKr:"에너지를 모아 움직이는 사람" },
+  { kw:"頑固",           neg:"融通が利かない",                       pos:"信念を曲げない芯の強さ",             kwEn:"Stubborn",       negEn:"Inflexible and can't compromise",             posEn:"Strong core that never bends on beliefs",      kwKr:"고집쟁이",      negKr:"융통성이 없다",                           posKr:"신념을 굽히지 않는 강한 심지" },
+  { kw:"臆病",           neg:"ビビってばかりで情けない",             pos:"リスクを見抜く感覚が鋭い",           kwEn:"Timid",          negEn:"Always scared — how pathetic",                posEn:"Sharp instinct for spotting risks",             kwKr:"소심한이",      negKr:"겁만 먹어서 한심하다",                   posKr:"리스크를 간파하는 감각이 예리하다" },
+  { kw:"せっかち",       neg:"落ち着きがなく迷惑だ",                 pos:"行動力があって推進力がある",         kwEn:"Impatient",      negEn:"Restless and a nuisance to others",           posEn:"Full of drive and momentum",                   kwKr:"성급한이",      negKr:"차분하지 못해서 민폐다",                 posKr:"행동력 있고 추진력이 있다" },
+  { kw:"のろま",         neg:"遅くてみんなの足を引っ張る",           pos:"確実に丁寧に仕上げる人",             kwEn:"Slowpoke",       negEn:"Too slow and holds everyone back",            posEn:"Someone who finishes things carefully and surely", kwKr:"느림보",      negKr:"느려서 모두의 발목을 잡는다",             posKr:"확실하고 정성스럽게 마무리하는 사람" },
+  { kw:"わがまま",       neg:"自己中心的で迷惑だ",                   pos:"自分の気持ちに正直な人",             kwEn:"Self-centered",  negEn:"Selfish and a nuisance",                      posEn:"Someone honest with their own feelings",       kwKr:"자기중심적",    negKr:"이기적이어서 민폐다",                     posKr:"자신의 감정에 솔직한 사람" },
+  { kw:"ネガティブ",     neg:"暗くて一緒にいるとしんどい",           pos:"リスクを先読みする力がある",         kwEn:"Negative",       negEn:"Gloomy and draining to be around",            posEn:"Has the ability to anticipate risks ahead of time", kwKr:"부정적인이",  negKr:"어두워서 함께 있으면 힘들다",             posKr:"리스크를 미리 읽는 능력이 있다" },
+
+  // No.21〜30 能力・学力
+  { kw:"バカ",           neg:"頭が悪くて使えない",                   pos:"素直に伸びしろがたっぷりある",       kwEn:"Dumb",           negEn:"Stupid and useless",                          posEn:"Honest heart with plenty of room to grow",     kwKr:"바보",          negKr:"머리가 나빠서 쓸모없다",                 posKr:"솔직하게 성장 가능성이 풍부하다" },
+  { kw:"のろい",         neg:"遅すぎる",                             pos:"一歩一歩確かに進んでいる",           kwEn:"Slow",           negEn:"Way too slow",                                posEn:"Moving forward surely, one step at a time",    kwKr:"굼뱅이",        negKr:"너무 느리다",                             posKr:"한 걸음 한 걸음 확실히 나아가고 있다" },
+  { kw:"不器用",         neg:"何をやらせてもダメだ",                 pos:"努力の積み重ねが人一倍見える",       kwEn:"Clumsy",         negEn:"Hopeless at everything",                      posEn:"Effort and hard work shine through more than anyone's", kwKr:"손재주 없는이", negKr:"뭘 시켜도 안 된다",              posKr:"노력의 축적이 누구보다 빛난다" },
+  { kw:"忘れっぽい",     neg:"覚えられないダメ人間",                 pos:"今この瞬間を大切に生きている",       kwEn:"Forgetful",      negEn:"Can't remember anything — hopeless",          posEn:"Living fully in the present moment",           kwKr:"건망증 있는이", negKr:"기억 못 하는 형편없는 사람",             posKr:"지금 이 순간을 소중히 살고 있다" },
+  { kw:"三日坊主",       neg:"何も続かない意志の弱い人",             pos:"新しいことへの好奇心が旺盛",         kwEn:"Quitter",        negEn:"Nothing ever lasts — weak-willed",            posEn:"Bursting with curiosity for new things",       kwKr:"작심삼일",      negKr:"아무것도 지속 못 하는 의지 약한 사람",   posKr:"새로운 것에 대한 호기심이 왕성하다" },
+  { kw:"ドジ",           neg:"失敗ばかりで信用されない",             pos:"経験から学ぶ力が育っている",         kwEn:"Blunderer",      negEn:"Always failing — no one trusts me",           posEn:"Learning power grows stronger with every experience", kwKr:"실수투성이",  negKr:"실패만 해서 신뢰받지 못한다",             posKr:"경험에서 배우는 힘이 자라고 있다" },
+  { kw:"おっちょこちょい", neg:"いつもミスして恥ずかしい",           pos:"周りを笑顔にする愛されキャラ",       kwEn:"Scatterbrain",   negEn:"Always making mistakes — so embarrassing",    posEn:"An endearing character who brings smiles to everyone", kwKr:"덜렁이",      negKr:"항상 실수해서 창피하다",                 posKr:"주변을 웃게 만드는 사랑스러운 캐릭터" },
+  { kw:"あがり症",       neg:"本番でいつも失敗する",                 pos:"本気で取り組んでいる証拠だ",         kwEn:"Stage fright",   negEn:"Always fails when it matters most",           posEn:"Proof that you're genuinely giving your all",  kwKr:"무대공포증",    negKr:"본번에서 항상 실패한다",                 posKr:"진심으로 임하고 있다는 증거다" },
+  { kw:"優柔不断",       neg:"決断できなくて頼りない",               pos:"多角的に考えられる慎重さ",           kwEn:"Indecisive",     negEn:"Can't decide anything — unreliable",          posEn:"Careful thinker who sees from many angles",    kwKr:"우유부단",      negKr:"결단 못 하고 믿음직스럽지 않다",         posKr:"다각도로 생각할 수 있는 신중함" },
+  { kw:"飽き性",         neg:"何も身につかない",                     pos:"幅広い経験と好奇心の持ち主",         kwEn:"Easily bored",   negEn:"Nothing ever sticks",                         posEn:"Someone with wide-ranging experience and curiosity", kwKr:"질리기 쉬운이", negKr:"아무것도 몸에 안 붙는다",          posKr:"폭넓은 경험과 호기심의 소유자" },
+
+  // No.31〜40 社会性・人間関係
+  { kw:"コミュ障",       neg:"人と話せなくて社会人失格",             pos:"深い関係を大切にする人",             kwEn:"Socially awkward", negEn:"Can't talk to people — unfit for society",  posEn:"Someone who treasures deep, meaningful connections", kwKr:"소통 장애",   negKr:"사람과 얘기 못 해서 사회인 실격",         posKr:"깊은 관계를 소중히 하는 사람" },
+  { kw:"人見知り",       neg:"なじめなくて迷惑だ",                   pos:"慎重に信頼関係を築く誠実さ",         kwEn:"Shy",            negEn:"Can't fit in — a burden to others",           posEn:"Sincere person who builds trust carefully",    kwKr:"낯가림",        negKr:"어울리지 못해서 민폐다",                 posKr:"신중하게 신뢰 관계를 쌓는 성실함" },
+  { kw:"八方美人",       neg:"誰にでもいい顔して信用できない",       pos:"どんな人にも寄り添える共感力",       kwEn:"People-pleaser", negEn:"All smiles for everyone — can't be trusted",  posEn:"Empathy that allows you to support anyone",    kwKr:"팔방미인",      negKr:"누구에게나 좋은 얼굴해서 믿을 수 없다",  posKr:"어떤 사람에게도 공감할 수 있는 힘" },
+  { kw:"目立ちたがり",   neg:"でしゃばって空気が読めない",           pos:"場を盛り上げるエネルギーがある",     kwEn:"Attention-seeker", negEn:"Pushy and clueless about the room",         posEn:"Energy that lights up the whole atmosphere",   kwKr:"관심꾸러기",    negKr:"나서서 분위기 파악 못 한다",             posKr:"분위기를 띄우는 에너지가 있다" },
+  { kw:"おとなしい",     neg:"影が薄くて存在感がない",               pos:"聴く力があり信頼される",             kwEn:"Quiet",          negEn:"Fades into the background — no presence",    posEn:"Great listener who earns trust naturally",     kwKr:"조용한이",      negKr:"그림자처럼 존재감이 없다",               posKr:"경청 능력이 있어 신뢰받는다" },
+  { kw:"うるさい",       neg:"騒がしくて迷惑だ",                     pos:"明るさでその場を元気にする",         kwEn:"Loud",           negEn:"Noisy and a nuisance",                        posEn:"Brightens the whole place with sheer energy",  kwKr:"시끄러운이",    negKr:"시끄러워서 민폐다",                       posKr:"밝음으로 그 자리를 활기차게 한다" },
+  { kw:"空気が読めない", neg:"デリカシーがない",                     pos:"周囲に流されない独自の視点がある",   kwEn:"Tone-deaf",      negEn:"Totally lacks sensitivity",                   posEn:"Has a unique perspective unswayed by the crowd", kwKr:"눈치 없는이",  negKr:"배려심이 없다",                           posKr:"주변에 휩쓸리지 않는 독자적 시각이 있다" },
+  { kw:"KY",             neg:"場の雰囲気を壊す",                     pos:"忖度なく本音を伝えられる人",         kwEn:"Oblivious",      negEn:"Ruins the vibe of the room",                  posEn:"Someone who speaks their truth without pretense", kwKr:"분위기 파악 안 됨", negKr:"분위기를 망친다",              posKr:"눈치 보지 않고 솔직하게 말할 수 있는 사람" },
+  { kw:"馴れ馴れしい",   neg:"距離感がなくて不快",                   pos:"人との壁をすぐに取り払える力",       kwEn:"Too familiar",   negEn:"No sense of personal space — uncomfortable",  posEn:"Ability to quickly break down walls between people", kwKr:"스스럼없는이", negKr:"거리감 없어서 불편하다",               posKr:"사람 사이의 벽을 금방 허무는 힘" },
+  { kw:"しつこい",       neg:"しつこくて迷惑だ",                     pos:"諦めずに向き合い続ける胆力",         kwEn:"Persistent",     negEn:"So persistent it's annoying",                 posEn:"Grit to keep facing challenges without giving up", kwKr:"집요한이",     negKr:"집요해서 민폐다",                         posKr:"포기 않고 계속 마주하는 담력" },
+
+  // No.41〜50 精神・メンタル
+  { kw:"心配性",         neg:"くよくよして前に進めない",             pos:"周囲への気配りが細やかだ",           kwEn:"Worrier",        negEn:"Frets too much to move forward",              posEn:"Genuinely considerate and attentive to those around you", kwKr:"걱정쟁이",  negKr:"전전긍긍해서 앞으로 나가지 못한다",       posKr:"주변에 대한 세심한 배려가 있다" },
+  { kw:"傷つきやすい",   neg:"すぐ凹んで面倒くさい",                 pos:"感受性が豊かで深く感じられる",       kwEn:"Easily hurt",    negEn:"Gets down so quickly — what a hassle",        posEn:"Rich sensitivity that allows you to feel things deeply", kwKr:"상처받기 쉬운이", negKr:"금방 풀 죽어서 귀찮다",           posKr:"풍부한 감수성으로 깊이 느낄 수 있다" },
+  { kw:"自己嫌悪",       neg:"自分が嫌いでどうしようもない",         pos:"もっとよくなりたいという証拠だ",     kwEn:"Self-loathing",  negEn:"I hate myself and feel hopeless",             posEn:"Proof that you want to become better",         kwKr:"자기혐오",      negKr:"자신이 싫어서 어쩔 수 없다",             posKr:"더 나아지고 싶다는 증거다" },
+  { kw:"落ち込みやすい", neg:"メンタルが弱くて使えない",             pos:"感情に正直で人間らしい",             kwEn:"Down easily",    negEn:"Mentally weak and useless",                   posEn:"Honest with emotions — genuinely human",       kwKr:"쉽게 우울한이", negKr:"멘탈이 약해서 쓸모없다",                 posKr:"감정에 솔직하고 인간적이다" },
+  { kw:"自信がない",     neg:"何をやっても無理な人",                 pos:"謙虚さと学ぶ姿勢を持っている",       kwEn:"No confidence",  negEn:"Nothing is possible for someone like me",    posEn:"Humble and always open to learning",           kwKr:"자신감 없는이", negKr:"뭘 해도 안 되는 사람",                   posKr:"겸손함과 배우려는 자세를 가지고 있다" },
+  { kw:"ネクラ",         neg:"暗くて近寄りにくい",                   pos:"内面が豊かで思慮深い",               kwEn:"Gloomy",         negEn:"Dark and unapproachable",                     posEn:"Rich inner world and deeply thoughtful",       kwKr:"음침한이",      negKr:"어두워서 가까이하기 어렵다",             posKr:"내면이 풍부하고 사려 깊다" },
+  { kw:"孤独",           neg:"友達もいなくて惨め",                   pos:"自分と深く向き合える強さがある",     kwEn:"Lonely",         negEn:"No friends — just miserable",                 posEn:"Strength to look deeply within yourself",      kwKr:"고독",          negKr:"친구도 없어서 비참하다",                 posKr:"자신과 깊이 마주할 수 있는 강함이 있다" },
+  { kw:"甘えん坊",       neg:"自立できていない",                     pos:"素直に頼れる人は周りに愛される",     kwEn:"Dependent",      negEn:"Can't be independent",                        posEn:"People who ask for help honestly are loved by others", kwKr:"응석쟁이",    negKr:"자립하지 못하고 있다",                   posKr:"솔직하게 기댈 수 있는 사람은 주변에 사랑받는다" },
+  { kw:"プライドが高い", neg:"扱いにくくて困る",                     pos:"高い理想を持つ意識の高い人",         kwEn:"High pride",     negEn:"Difficult to deal with — what a pain",        posEn:"A highly self-aware person with lofty ideals", kwKr:"자존심 강한이", negKr:"다루기 힘들어서 곤란하다",               posKr:"높은 이상을 가진 의식 높은 사람" },
+  { kw:"劣等感が強い",   neg:"自分を卑下してばかり",                 pos:"向上心のエネルギーが眠っている",     kwEn:"Inferiority complex", negEn:"Always putting myself down",             posEn:"Ambition energy is sleeping inside you, waiting to awaken", kwKr:"열등감이 강한이", negKr:"자신을 비하하기만 한다",    posKr:"향상심의 에너지가 잠들어 있다" },
+
+  // No.51〜60 生活・行動習慣
+  { kw:"ズボラ",         neg:"だらしなくて最低だ",                   pos:"力を抜くのが上手で疲れにくい",       kwEn:"Sloppy",         negEn:"So untidy — the worst",                       posEn:"Great at letting go and doesn't tire easily",  kwKr:"덜렁한이",      negKr:"지저분해서 최악이다",                     posKr:"힘을 빼는 데 능숙해서 지치지 않는다" },
+  { kw:"整理できない",   neg:"片付けられない人間失格",               pos:"大切なものを直感で見つけられる",     kwEn:"Messy",          negEn:"Can't tidy up — failure as a person",         posEn:"Can find what truly matters by intuition",     kwKr:"정리 못 하는이", negKr:"정리 못 하는 인간 실격",               posKr:"소중한 것을 직감으로 찾아낼 수 있다" },
+  { kw:"浪費家",         neg:"お金の管理ができないダメ人間",         pos:"今を楽しむことを知っている",         kwEn:"Spendthrift",    negEn:"Can't manage money — hopeless",               posEn:"Knows how to enjoy the present moment",        kwKr:"낭비벽",        negKr:"돈 관리 못 하는 형편없는 사람",           posKr:"지금을 즐기는 법을 알고 있다" },
+  { kw:"面倒くさがり",   neg:"何もしない怠惰な人",                   pos:"効率を自然に求める合理的な人",       kwEn:"Lazy about effort", negEn:"Does nothing — utterly idle",              posEn:"Naturally seeks efficiency — a rational thinker", kwKr:"귀찮아하는이", negKr:"아무것도 안 하는 나태한 사람",            posKr:"효율을 자연스럽게 추구하는 합리적인 사람" },
+  { kw:"夜型",           neg:"昼夜逆転でだらしない",                 pos:"夜に集中できる独自のリズムがある",   kwEn:"Night owl",      negEn:"Day-night reversed — so undisciplined",       posEn:"A unique rhythm that finds focus in the night", kwKr:"야행성",        negKr:"낮밤이 바뀌어서 지저분하다",             posKr:"밤에 집중할 수 있는 독자적인 리듬이 있다" },
+  { kw:"食いしん坊",     neg:"食べ過ぎで自制心がない",               pos:"味わう喜びをちゃんと知っている",     kwEn:"Foodie",         negEn:"Eats too much — zero self-control",           posEn:"Truly knows the joy of savoring each bite",    kwKr:"먹보",          negKr:"너무 많이 먹어서 자제심이 없다",         posKr:"맛을 음미하는 기쁨을 제대로 알고 있다" },
+  { kw:"寝坊",           neg:"時間にルーズで社会人として終わり",     pos:"体が必要な休息をちゃんと取れる",     kwEn:"Oversleeper",    negEn:"Careless with time — finished as an adult",   posEn:"Body knows how to take the rest it truly needs", kwKr:"늦잠꾸러기",   negKr:"시간에 루즈해서 사회인으로 끝이다",       posKr:"몸이 필요한 휴식을 제대로 취할 수 있다" },
+  { kw:"飽きっぽい",     neg:"すぐ諦める根性なし",                   pos:"自分に合うものを探し続ける力",       kwEn:"Easily bored",   negEn:"Gives up so fast — no backbone",              posEn:"Power to keep searching for what truly fits you", kwKr:"싫증쟁이",     negKr:"금방 포기하는 근성 없는이",               posKr:"자신에게 맞는 것을 계속 찾는 힘" },
+  { kw:"こだわりが強い", neg:"融通が利かなくて困る",                 pos:"クオリティへの妥協を許さない",       kwEn:"Picky",          negEn:"So inflexible — hard to work with",           posEn:"Refuses to compromise on quality",             kwKr:"고집이 강한이", negKr:"융통성 없어서 곤란하다",                 posKr:"퀄리티에 대한 타협을 허락하지 않는다" },
+  { kw:"依存しやすい",   neg:"自立できていない弱い人",               pos:"絆を求める温かな心がある",           kwEn:"Dependent",      negEn:"Can't be independent — so weak",              posEn:"A warm heart that genuinely seeks connection", kwKr:"의존하기 쉬운이", negKr:"자립 못 하는 약한 사람",              posKr:"유대를 바라는 따뜻한 마음이 있다" },
+
+  // No.61〜70 仕事・生産性
+  { kw:"要領が悪い",     neg:"仕事が遅くて役に立たない",             pos:"丁寧に一つずつ積み上げていける",     kwEn:"Inefficient",    negEn:"Slow at work and utterly useless",            posEn:"Can build things carefully, one step at a time",      kwKr:"요령 없는이",   negKr:"일이 느려서 도움이 안 된다",             posKr:"정성스럽게 하나씩 쌓아갈 수 있다" },
+  { kw:"完璧主義",       neg:"細かすぎて作業が進まない",             pos:"高い基準を持つ誇りある仕事人",       kwEn:"Perfectionist",  negEn:"Too detail-obsessed to make any progress",   posEn:"A proud professional with exceptionally high standards", kwKr:"완벽주의",      negKr:"너무 꼼꼼해서 작업이 진행 안 된다",     posKr:"높은 기준을 가진 자랑스러운 직업인" },
+  { kw:"中途半端",       neg:"何も仕上げられない半人前",             pos:"複数のことを同時に動かせる人",       kwEn:"Half-baked",     negEn:"Can't finish anything — an amateur",          posEn:"Someone who can keep multiple things moving at once",  kwKr:"어중간한이",    negKr:"아무것도 마무리 못 하는 반인분",         posKr:"여러 가지를 동시에 진행시킬 수 있는 사람" },
+  { kw:"優しすぎる",     neg:"ナメられてばかりで損する",             pos:"周りを思いやれる人格者だ",           kwEn:"Too kind",       negEn:"Always taken advantage of — a loss",          posEn:"A person of true character who genuinely cares for others", kwKr:"너무 착한이",   negKr:"항상 무시당해서 손해를 본다",         posKr:"주변을 배려할 수 있는 인격자다" },
+  { kw:"マイペース",     neg:"周りに合わせられない自己中",           pos:"自分軸を持つ安定したペース",         kwEn:"My own pace",    negEn:"Can't match others — totally self-centered",  posEn:"A steady, grounded pace guided by your own values",   kwKr:"나만의 페이스", negKr:"주변에 맞추지 못하는 자기중심적",       posKr:"자신의 축을 가진 안정된 페이스" },
+  { kw:"心が折れやすい", neg:"すぐ諦める弱いやつ",                   pos:"敏感に危険を察知できる自己防衛力",   kwEn:"Fragile spirit", negEn:"Gives up so easily — just weak",              posEn:"A sharp self-protective ability to sense danger quickly", kwKr:"마음 약한이",   negKr:"금방 포기하는 약한 녀석",             posKr:"민감하게 위험을 감지할 수 있는 자기방어력" },
+  { kw:"人に頼れない",   neg:"抱え込んで効率が悪い",                 pos:"責任感が強く最後まで向き合う人",     kwEn:"Can't rely on others", negEn:"Takes everything on — terribly inefficient", posEn:"Strong sense of responsibility; sees things through to the end", kwKr:"남에게 못 기대는이", negKr:"혼자 끌어안아서 효율이 나쁘다", posKr:"책임감이 강해 끝까지 마주하는 사람" },
+  { kw:"気が散りやすい", neg:"集中力がなくて使えない",               pos:"好奇心旺盛で多くに気づける人",       kwEn:"Easily distracted", negEn:"No focus — completely useless",            posEn:"Curious and quick to notice things others miss",      kwKr:"주의 산만",     negKr:"집중력 없어서 쓸모없다",                 posKr:"호기심 왕성해서 많은 것을 알아채는 사람" },
+  { kw:"慎重すぎる",     neg:"行動が遅くてチャンスを逃す",           pos:"リスクを見極めてから動く安心感",     kwEn:"Too cautious",   negEn:"Moves so slowly — keeps missing opportunities", posEn:"A reassuring presence that reads risks before acting", kwKr:"너무 신중한이", negKr:"행동이 느려서 기회를 놓친다",           posKr:"리스크를 파악하고 나서 움직이는 안도감" },
+  { kw:"頑張れない",     neg:"やる気がない怠け者",                   pos:"本当に必要なことを見極めている",     kwEn:"Can't push hard", negEn:"No motivation — just lazy",                 posEn:"Discerning about what truly deserves your energy",    kwKr:"노력 못 하는이", negKr:"의욕 없는 게으름뱅이",               posKr:"정말 필요한 것을 가려내고 있다" },
+
+  // No.71〜80 個性・くせ
+  { kw:"変わり者",       neg:"普通じゃなくて浮いている",             pos:"独自の世界を持つ個性的な存在",       kwEn:"Oddball",        negEn:"Not normal — sticks out like a sore thumb",  posEn:"A uniquely individual presence with a world of your own", kwKr:"특이한이",      negKr:"보통이 아니라 겉돌고 있다",           posKr:"독자적 세계를 가진 개성적인 존재" },
+  { kw:"オタク",         neg:"キモくて引かれる",                     pos:"好きなことへの熱量が誰より深い",     kwEn:"Geek / Otaku",   negEn:"Creepy — people pull away",                  posEn:"Passion for what you love runs deeper than anyone's", kwKr:"오타쿠",        negKr:"징그러워서 사람이 떠난다",               posKr:"좋아하는 것에 대한 열정이 누구보다 깊다" },
+  { kw:"天然",           neg:"ぼんやりして使えない",                 pos:"癒しと笑いを周りに与える存在",       kwEn:"Airhead",        negEn:"Spacey and useless",                          posEn:"A presence that brings healing and laughter to everyone", kwKr:"천연",         negKr:"멍해서 쓸모없다",                         posKr:"치유와 웃음을 주변에 주는 존재" },
+  { kw:"ひとりが好き",   neg:"友達いなくてかわいそう",               pos:"自分の時間を豊かにつくれる人",       kwEn:"Loner",          negEn:"No friends — how sad",                        posEn:"Someone who knows how to create a rich life alone",   kwKr:"혼자가 좋은이", negKr:"친구 없어서 불쌍하다",                   posKr:"자신의 시간을 풍요롭게 만들 수 있는 사람" },
+  { kw:"感情的",         neg:"すぐ感情的になって困る",               pos:"感情に正直で伝わる力がある",         kwEn:"Emotional",      negEn:"Gets emotional so fast — so difficult",       posEn:"Honest with feelings and able to communicate them powerfully", kwKr:"감정적인이", negKr:"금방 감정적이 되어서 곤란하다",         posKr:"감정에 솔직해서 전달하는 힘이 있다" },
+  { kw:"不思議ちゃん",   neg:"会話がかみ合わない",                   pos:"ユニークな視点で場に彩りを加える",   kwEn:"Quirky",         negEn:"Conversations never connect",                 posEn:"A unique perspective that adds color to any room",    kwKr:"신비로운이",    negKr:"대화가 안 맞는다",                       posKr:"유니크한 시각으로 자리에 색채를 더한다" },
+  { kw:"理屈っぽい",     neg:"めんどくさくて嫌われる",               pos:"論理的に物事を整理できる力",         kwEn:"Over-analytical", negEn:"Annoying and disliked",                      posEn:"Ability to organize things logically and clearly",    kwKr:"이론적인이",    negKr:"귀찮아서 싫음 받는다",                   posKr:"논리적으로 사물을 정리할 수 있는 힘" },
+  { kw:"夢想家",         neg:"現実が見えていない",                   pos:"未来を描く想像力がある",             kwEn:"Dreamer",        negEn:"Completely out of touch with reality",        posEn:"Imagination that can paint a vivid picture of the future", kwKr:"몽상가",        negKr:"현실이 안 보인다",                       posKr:"미래를 그리는 상상력이 있다" },
+  { kw:"おしゃべり",     neg:"うるさくて迷惑",                       pos:"コミュニケーションで場をつなぐ",     kwEn:"Chatterbox",     negEn:"Noisy and a nuisance",                        posEn:"Connects people through the power of conversation",   kwKr:"수다쟁이",      negKr:"시끄러워서 민폐다",                       posKr:"소통으로 자리를 연결한다" },
+  { kw:"無口",           neg:"陰気で何を考えているかわからない",     pos:"言葉を選んで深く伝えられる人",       kwEn:"Silent type",    negEn:"Gloomy — impossible to read their mind",     posEn:"Someone who chooses words carefully and communicates deeply", kwKr:"과묵한이",     negKr:"음침해서 무슨 생각인지 모르겠다",       posKr:"말을 가려서 깊이 전달할 수 있는 사람" },
+
+  // No.81〜90 人生・状況
+  { kw:"失敗ばかり",     neg:"何をやってもうまくいかない",           pos:"チャレンジした証が積み重なっている", kwEn:"Always failing", negEn:"Nothing ever works out",                      posEn:"Proof of every challenge you've dared to take on",    kwKr:"실패투성이",    negKr:"뭘 해도 잘 안 된다",                     posKr:"도전한 증거가 쌓여 있다" },
+  { kw:"挫折した",       neg:"途中で諦めた負け犬",                   pos:"本気でぶつかったから傷がある",       kwEn:"Gave up",        negEn:"Quit halfway — a loser",                      posEn:"The scars prove you threw yourself in with everything you had", kwKr:"좌절했다",     negKr:"중간에 포기한 패배자",                   posKr:"진심으로 부딪혔기에 상처가 있다" },
+  { kw:"運が悪い",       neg:"ツイてない不幸な人",                   pos:"試練を通じて強くなっていく人",       kwEn:"Unlucky",        negEn:"Just an unlucky, unfortunate person",         posEn:"Someone who grows stronger through every trial",      kwKr:"운 나쁜이",     negKr:"재수 없는 불행한 사람",                   posKr:"시련을 통해 강해지는 사람" },
+  { kw:"遅咲き",         neg:"周りより遅れている",                   pos:"自分のペースで着実に実をつける",     kwEn:"Late bloomer",   negEn:"Falling behind everyone else",                posEn:"Bearing fruit steadily at your own pace",             kwKr:"늦깎이",        negKr:"주변보다 늦어지고 있다",                 posKr:"자신의 페이스로 착실히 결실을 맺는다" },
+  { kw:"不安が多い",     neg:"怖がってばかりで情けない",             pos:"大切なものを守ろうとする愛情",       kwEn:"Anxious",        negEn:"Always scared — so pathetic",                 posEn:"Love expressed through the desire to protect what matters", kwKr:"불안이 많은이", negKr:"겁만 먹어서 한심하다",               posKr:"소중한 것을 지키려는 애정" },
+  { kw:"比べてしまう",   neg:"嫉妬ばかりで醜い",                     pos:"向上心と自己認識の高さの表れ",       kwEn:"Comparer",       negEn:"Nothing but jealousy — so ugly",              posEn:"A sign of strong ambition and deep self-awareness",   kwKr:"비교하는이",    negKr:"질투뿐이라 추하다",                       posKr:"향상심과 자기인식 높음의 표현" },
+  { kw:"承認欲求が強い", neg:"かまってちゃんで迷惑",                 pos:"認められたいという真剣さがある",     kwEn:"Approval-seeker", negEn:"Attention-hungry — a nuisance",              posEn:"Genuine seriousness about wanting to be recognized",  kwKr:"인정욕구 강한이", negKr:"관심받고 싶어 해서 민폐다",          posKr:"인정받고 싶다는 진지함이 있다" },
+  { kw:"過去を引きずる", neg:"前に進めない弱い人",                   pos:"経験をちゃんと抱きしめている人",     kwEn:"Living in the past", negEn:"Can't move forward — just weak",          posEn:"Someone who properly holds and honors their experiences", kwKr:"과거에 얽매인이", negKr:"앞으로 나가지 못하는 약한 사람",     posKr:"경험을 제대로 끌어안고 있는 사람" },
+  { kw:"変わりたい",     neg:"いつも同じで結局変わらない",           pos:"安定をしっかり大事にしつつ、成長したいという意思を諦めない。", kwEn:"Want to change", negEn:"Always the same — nothing ever really changes", posEn:"Honoring stability while never giving up the will to grow", kwKr:"변하고 싶다",   negKr:"항상 똑같아서 결국 변하지 않는다",       posKr:"안정을 소중히 하면서 성장하려는 의지를 포기하지 않는다" },
+  { kw:"普通がいい",     neg:"個性がなくてつまらない",               pos:"安定と調和を大切にできる人",         kwEn:"Just normal",    negEn:"No personality — so boring",                  posEn:"Someone who cherishes stability and harmony",         kwKr:"평범이 좋다",   negKr:"개성 없어서 재미없다",                   posKr:"안정과 조화를 소중히 할 수 있는 사람" },
+
+  // No.91〜100
+  { kw:"自分が嫌い",     neg:"こんな自分、消えてしまいたい",         pos:"自分をよく知っているから変われる",   kwEn:"Hate myself",    negEn:"I want to disappear — just like this",        posEn:"Because you know yourself well, you can truly change", kwKr:"자신이 싫다",   negKr:"이런 나, 사라져버리고 싶다",             posKr:"자신을 잘 알기에 변할 수 있다" },
+  { kw:"疲れやすい",     neg:"すぐばてて弱すぎる",                   pos:"体の声を正直に受け取れる人",         kwEn:"Tired easily",   negEn:"Gets exhausted so fast — far too weak",       posEn:"Someone who honestly listens to what their body is telling them", kwKr:"피로하기 쉬운이", negKr:"금방 지쳐서 너무 약하다",         posKr:"몸의 소리를 솔직하게 받아들이는 사람" },
+  { kw:"飽き飽きしてる", neg:"何もやる気が起きない無気力",           pos:"本当に大切なものを探している途中",   kwEn:"Fed up",         negEn:"No motivation for anything — completely listless", posEn:"In the middle of searching for what truly matters",  kwKr:"지겨운이",      negKr:"아무것도 하고 싶지 않은 무기력",         posKr:"정말 소중한 것을 찾고 있는 중" },
+  { kw:"迷惑をかける",   neg:"いつも誰かに迷惑な存在",               pos:"人の助けを借りられる素直な心がある", kwEn:"A burden",       negEn:"Always a burden to someone",                  posEn:"An honest heart that can gracefully accept others' help", kwKr:"폐 끼치는이",   negKr:"항상 누군가에게 폐를 끼치는 존재",       posKr:"남의 도움을 받을 수 있는 솔직한 마음이 있다" },
+  { kw:"うまくできない", neg:"何をやっても結果が出ない",             pos:"やり方を探し続けているひたむきさ",   kwEn:"Can't do it right", negEn:"No results no matter what I try",          posEn:"Earnest persistence to keep searching for the right way", kwKr:"잘 못 하는이", negKr:"뭘 해도 결과가 나오지 않는다",           posKr:"방법을 계속 찾는 성실함" },
+  { kw:"めんどくさい人", neg:"関わると疲れる扱いにくい人",           pos:"本気で向き合う深さを持っている",     kwEn:"Difficult person", negEn:"Exhausting to deal with — so hard to handle", posEn:"Someone with the depth to engage with things truly and seriously", kwKr:"귀찮은 사람", negKr:"관여하면 지치는 다루기 힘든 사람",       posKr:"진지하게 마주하는 깊이를 가지고 있다" },
+  { kw:"頭が悪い",       neg:"理解が遅くて話にならない",             pos:"自分のペースで確実に理解していく力", kwEn:"Not smart",      negEn:"Too slow to understand — not even worth talking to", posEn:"The ability to understand things surely, at your own pace", kwKr:"머리 나쁜이",  negKr:"이해가 느려서 얘기가 안 된다",           posKr:"자신의 페이스로 확실히 이해해 가는 힘" },
+  { kw:"嫌われてる",     neg:"みんなに嫌われているに違いない",       pos:"気にしながら誠実でいようとしている", kwEn:"Disliked",       negEn:"Everyone must hate me",                       posEn:"Someone who cares and keeps trying to be sincere anyway", kwKr:"미움받는이",    negKr:"모두에게 미움받고 있음이 틀림없다",       posKr:"신경 쓰면서도 성실하려고 한다" },
+  { kw:"ダメな親",       neg:"子どもに申し訳ないダメ親",             pos:"反省できる親は子どもの鏡になる",     kwEn:"Bad parent",     negEn:"Such a bad parent — so sorry to my child",   posEn:"A parent who can reflect becomes a true mirror for their child", kwKr:"못난 부모",    negKr:"아이에게 미안한 못난 부모",               posKr:"반성할 수 있는 부모는 아이의 거울이 된다" },
+  { kw:"生きてていい？", neg:"自分なんていない方がいい",             pos:"いていい。ここに存在していていい",   kwEn:"Can I exist?",   negEn:"The world would be better without me",        posEn:"You are allowed to be here. You are allowed to exist", kwKr:"살아도 돼?",    negKr:"나 같은 건 없는 게 나아",               posKr:"있어도 돼. 여기에 존재해도 돼" },
+];
+
+// ═══════════════════════════════════════════════
+// State
+// ═══════════════════════════════════════════════
+const STORAGE_KEY = 'balanceTraining_v2';
+
+let mode = 'seq';           // 'seq' | 'rnd'
+let currentIndex = -1;      // 順番モード：0〜99 / ランダムモード：現在のdata index
+let visitedNums = new Set();
+let favorites = new Set();
+let randomPool = [];        // ランダムモード用：未出現のindexプール
+let randomShown = [];       // ランダムモード：出現済みindex（戻る用）
+let randomPos = -1;         // ランダムモード：randomShown内の位置
+
+// ─── 保存・読込 ───────────────────────────────
+function saveState() {
+  try {
+    const s = {
+      mode, currentIndex, visited: [...visitedNums], favorites: [...favorites],
+      randomPool, randomShown, randomPos
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(s));
+  } catch(e) {}
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return false;
+    const s = JSON.parse(raw);
+    mode         = s.mode === 'rnd' ? 'rnd' : 'seq';
+    currentIndex = (typeof s.currentIndex === 'number') ? s.currentIndex : -1;
+    visitedNums  = new Set(Array.isArray(s.visited)   ? s.visited   : []);
+    favorites    = new Set(Array.isArray(s.favorites) ? s.favorites : []);
+    randomPool   = Array.isArray(s.randomPool)  ? s.randomPool  : [];
+    randomShown  = Array.isArray(s.randomShown) ? s.randomShown : [];
+    randomPos    = (typeof s.randomPos === 'number') ? s.randomPos : -1;
+    return visitedNums.size > 0 || randomShown.length > 0;
+  } catch(e) { return false; }
+}
+
+// ─── モード切り替え ───────────────────────────
+function setMode(m) {
+  if (mode === m) return;
+  mode = m;
+  applyModeUI();
+  softReset();   // 表示だけリセット、履歴・お気に入りは保持
+  // ヒストリーチップはモード共通で残す（消さない）
+  if (visitedNums.size > 0) {
+    document.getElementById('historyWrap').style.display = 'block';
+  }
+  saveState();
+}
+
+function applyModeUI() {
+  const isSeq = mode === 'seq';
+  document.getElementById('modeSeq').classList.toggle('active', isSeq);
+  document.getElementById('modeRnd').classList.toggle('active', !isSeq);
+  const t = i18n[currentLang] || i18n['en'];
+  document.getElementById('appHeaderLabel').textContent =
+    isSeq ? t.appHeaderLabelSeq : t.appHeaderLabelRnd;
+  document.getElementById('emptyMsg').textContent =
+    isSeq ? t.emptyMsgSeq : t.emptyMsgRnd;
+  // 順番モードのみ番号ジャンプ表示
+  document.getElementById('numSearchWrap').style.display = isSeq ? 'block' : 'none';
+}
+
+// ─── 表示リセット（モード切替・最初からボタン用）───
+function softReset() {
+  currentIndex = -1;
+  if (mode === 'rnd') {
+    randomPool = shuffle([...Array(data.length).keys()]);
+    randomShown = [];
+    randomPos = -1;
+  }
+  document.getElementById('displayPair').classList.remove('visible');
+  document.getElementById('emptyState').style.display = 'block';
+  document.getElementById('curNumLabel').textContent = '—';
+  document.getElementById('progressFill').style.width = '0%';
+  document.getElementById('resumeLabel').style.display = 'none';
+  document.getElementById('btnPrev').disabled = true;
+  const btnNext = document.getElementById('btnNext');
+  const t = i18n[currentLang] || i18n['en'];
+  btnNext.textContent = t.btnNext;
+  btnNext.disabled = false;
+  updateFavBtn(-1);
+}
+
+// ─── 表示 ─────────────────────────────────────
+function showIndex(idx, scrollIntoView) {
+  if (idx < 0 || idx >= data.length) return;
+  currentIndex = idx;
+  const item = data[idx];
+  const num = idx + 1;
+
+  const pair = document.getElementById('displayPair');
+  const empty = document.getElementById('emptyState');
+
+  empty.style.display = 'none';
+  pair.classList.remove('visible');
+
+  document.getElementById('dispNum').textContent = `No. ${num}`;
+  const isEn = currentLang === 'en';
+  const isKr = currentLang === 'kr';
+  document.getElementById('dispKeyword').textContent = isEn ? (item.kwEn || item.kw) : isKr ? (item.kwKr || item.kw) : item.kw;
+  document.getElementById('dispNeg').textContent     = isEn ? (item.negEn || item.neg) : isKr ? (item.negKr || item.neg) : item.neg;
+  document.getElementById('dispPos').textContent     = isEn ? (item.posEn || item.pos) : isKr ? (item.posKr || item.pos) : item.pos;
+
+  // Refresh display labels in current language
+  const tl = i18n[currentLang] || i18n['en'];
+  const negLbl = document.querySelector('.display-neg .display-label');
+  const posLbl = document.querySelector('.display-pos .display-label');
+  if (negLbl) negLbl.textContent = tl.labelNeg;
+  if (posLbl) posLbl.textContent = tl.labelPos;
+
+  setTimeout(() => pair.classList.add('visible'), 30);
+
+  // Progress
+  document.getElementById('curNumLabel').textContent = num;
+  if (mode === 'seq') {
+    document.getElementById('progressFill').style.width = `${(num / data.length) * 100}%`;
+  } else {
+    // ランダム：出現済み数 / 全体
+    const done = randomShown.length;
+    document.getElementById('progressFill').style.width = `${(done / data.length) * 100}%`;
+    const t2 = i18n[currentLang] || i18n['en'];
+    document.getElementById('curNumLabel').textContent =
+      currentLang === 'en' ? `${done} shown` : currentLang === 'kr' ? `${done}번째` : `${done} 枚目`;
+  }
+
+  // Prev/Next buttons
+  const t = i18n[currentLang] || i18n['en'];
+  if (mode === 'seq') {
+    document.getElementById('btnPrev').disabled = (idx === 0);
+    const btnNext = document.getElementById('btnNext');
+    if (idx >= data.length - 1) {
+      btnNext.textContent = '🎉 ' + (currentLang === 'en' ? 'All words complete!' : currentLang === 'kr' ? '모든 단어 완료！' : '全語コンプリート！');
+      btnNext.disabled = true;
+    } else {
+      btnNext.textContent = t.btnNext;
+      btnNext.disabled = false;
+    }
+  } else {
+    document.getElementById('btnPrev').disabled = (randomPos <= 0);
+    const btnNext = document.getElementById('btnNext');
+    if (randomPool.length === 0 && randomPos >= randomShown.length - 1) {
+      btnNext.textContent = '🎉 ' + (currentLang === 'en' ? 'All words complete!' : currentLang === 'kr' ? '모든 단어 완료！' : '全語コンプリート！');
+      btnNext.disabled = true;
+    } else {
+      btnNext.textContent = t.btnNext;
+      btnNext.disabled = false;
+    }
+  }
+
+  // Track visited
+  if (!visitedNums.has(num)) {
+    visitedNums.add(num);
+    addChip(idx);
+    document.getElementById('historyWrap').style.display = 'block';
+  }
+
+  // Fav button state
+  updateFavBtn(num);
+
+  saveState();
+
+  if (scrollIntoView) {
+    document.querySelector('.app-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+// ─── ナビゲーション ───────────────────────────
+function goNext() {
+  if (mode === 'seq') {
+    const next = currentIndex + 1;
+    if (next < data.length) showIndex(next, false);
+  } else {
+    // ランダム：履歴の先があればそこへ、なければプールから引く
+    if (randomPos < randomShown.length - 1) {
+      randomPos++;
+      showIndex(randomShown[randomPos], false);
+    } else if (randomPool.length > 0) {
+      const idx = randomPool.pop();
+      randomShown.push(idx);
+      randomPos = randomShown.length - 1;
+      showIndex(idx, false);
+    }
+  }
+}
+
+function goPrev() {
+  if (mode === 'seq') {
+    const prev = currentIndex - 1;
+    if (prev >= 0) showIndex(prev, false);
+  } else {
+    if (randomPos > 0) {
+      randomPos--;
+      showIndex(randomShown[randomPos], false);
+    }
+  }
+}
+
+function jumpTo() {
+  const val = parseInt(document.getElementById('numInput').value, 10);
+  const err = document.getElementById('numError');
+  const t = i18n[currentLang] || i18n['en'];
+  if (isNaN(val) || val < 1 || val > data.length) {
+    err.textContent = t.numErrMsg(data.length);
+    return;
+  }
+  err.textContent = '';
+  document.getElementById('numInput').value = '';
+  showIndex(val - 1, true);
+}
+
+function resetAll() {
+  visitedNums = new Set();
+  document.getElementById('historyStrip').innerHTML = '';
+  document.getElementById('historyWrap').style.display = 'none';
+  softReset();
+  saveState();
+}
+
+// ─── shuffle ──────────────────────────────────
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// ─── その他の無料アプリ アコーディオン ──────────
+function toggleOtherApps() {
+  const body = document.getElementById('otherAppsBody');
+  const chevron = document.getElementById('otherAppsChevron');
+  const btn = document.getElementById('otherAppsToggle');
+  const isOpen = body.style.display !== 'none';
+  body.style.display = isOpen ? 'none' : 'block';
+  chevron.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+}
+
+
+function updateFavBtn(num) {
+  const btn = document.getElementById('btnFav');
+  const label = document.getElementById('btnFavLabel');
+  const t = i18n[currentLang] || i18n['en'];
+  if (num < 1) {
+    btn.classList.remove('active');
+    btn.querySelector('.fav-icon').textContent = '☆';
+    label.textContent = t.btnFavDefault;
+    btn.disabled = true;
+    btn.style.opacity = '0.4';
+    return;
+  }
+  btn.disabled = false;
+  btn.style.opacity = '1';
+  if (favorites.has(num)) {
+    btn.classList.add('active');
+    btn.querySelector('.fav-icon').textContent = '⭐';
+    label.textContent = t.btnFavSaved;
+  } else {
+    btn.classList.remove('active');
+    btn.querySelector('.fav-icon').textContent = '☆';
+    label.textContent = t.btnFavDefault;
+  }
+}
+
+function toggleFav() {
+  if (currentIndex < 0) return;
+  const num = currentIndex + 1;
+  if (favorites.has(num)) {
+    favorites.delete(num);
+    removeFavItem(num);
+  } else {
+    favorites.add(num);
+    addFavItem(currentIndex);
+  }
+  updateFavBtn(num);
+  renderFavSection();
+  saveState();
+}
+
+function addFavItem(idx) {
+  const item = data[idx];
+  const num = idx + 1;
+  const list = document.getElementById('favList');
+  if (list.querySelector(`[data-fav="${num}"]`)) return;
+
+  const el = document.createElement('div');
+  el.className = 'fav-item';
+  el.dataset.fav = num;
+  const isEnFav = currentLang === 'en';
+  const isKrFav = currentLang === 'kr';
+  const favKw  = isEnFav ? (item.kwEn  || item.kw)  : isKrFav ? (item.kwKr  || item.kw)  : item.kw;
+  const favPos = isEnFav ? (item.posEn || item.pos) : isKrFav ? (item.posKr || item.pos) : item.pos;
+  el.innerHTML = `
+    <div class="fav-item-num">No.${num}</div>
+    <div class="fav-item-body">
+      <div class="fav-item-kw">${favKw}</div>
+      <div class="fav-item-pos">▶ ${favPos}</div>
+    </div>
+    <button class="fav-item-del" title="削除" onclick="removeFavByNum(${num}, event)">✕</button>
+  `;
+  el.addEventListener('click', (e) => {
+    if (e.target.classList.contains('fav-item-del')) return;
+    showIndex(idx, true);
+  });
+
+  // 番号順に挿入
+  const existing = [...list.querySelectorAll('.fav-item')];
+  const after = existing.find(el => parseInt(el.dataset.fav) > num);
+  if (after) list.insertBefore(el, after);
+  else list.appendChild(el);
+}
+
+function removeFavItem(num) {
+  const list = document.getElementById('favList');
+  const el = list.querySelector(`[data-fav="${num}"]`);
+  if (el) el.remove();
+}
+
+function removeFavByNum(num, e) {
+  e.stopPropagation();
+  favorites.delete(num);
+  removeFavItem(num);
+  renderFavSection();
+  if (currentIndex + 1 === num) updateFavBtn(num);
+  saveState();
+}
+
+function renderFavSection() {
+  const sec = document.getElementById('favSection');
+  const empty = document.getElementById('favEmpty');
+  const countEl = document.getElementById('favCount');
+  countEl.textContent = favorites.size;
+  if (favorites.size > 0) {
+    sec.style.display = 'block';
+    empty.style.display = 'none';
+  } else {
+    sec.style.display = 'none';
+    empty.style.display = 'block';
+  }
+}
+
+// ─── ヒストリーチップ ─────────────────────────
+function clearHistory() {
+  visitedNums = new Set();
+  document.getElementById('historyStrip').innerHTML = '';
+  document.getElementById('historyWrap').style.display = 'none';
+  saveState();
+}
+function addChip(idx) {
+  const item = data[idx];
+  const num = idx + 1;
+  const strip = document.getElementById('historyStrip');
+
+  // 既存チップがあればスキップ
+  if (strip.querySelector(`[data-num="${num}"]`)) return;
+
+  const chip = document.createElement('span');
+  chip.className = 'hist-chip';
+  chip.dataset.num = num;
+  const isEnChip = currentLang === 'en';
+  const isKrChip = currentLang === 'kr';
+  const chipKw  = isEnChip ? (item.kwEn  || item.kw)  : isKrChip ? (item.kwKr  || item.kw)  : item.kw;
+  const chipNeg = isEnChip ? (item.negEn || item.neg) : isKrChip ? (item.negKr || item.neg) : item.neg;
+  const chipPos = isEnChip ? (item.posEn || item.pos) : isKrChip ? (item.posKr || item.pos) : item.pos;
+  chip.innerHTML = `<span class="chip-num">No.${num}</span>${chipKw}`;
+  chip.title = `No.${num}｜${chipNeg} ▶ ${chipPos}`;
+  chip.onclick = () => showIndex(idx, true);
+  strip.prepend(chip);
+}
+
+// ═══════════════════════════════════════════════
+// i18n — Language Switcher
+// ═══════════════════════════════════════════════
+let currentLang = 'jp';
+
+const i18n = {
+  en: {
+    htmlLang: 'en',
+    headerLabel: 'Balance Training',
+    h1: 'Word &amp; Mental<br><span class="accent">Balance Training</span>',
+    appHeaderLabelSeq: 'Balance Maker — Sequential Mode',
+    appHeaderLabelRnd: 'Balance Maker — Random Mode',
+    appHeaderTitle: '⚖️ Balance Maker',
+    modeSeq: '📋 Sequential',
+    modeRnd: '🎲 Random',
+    progressSpan: 'No. <strong id="curNumLabel">—</strong> / 100',
+    resumeBadge: '📌 Resuming',
+    emptyMsgSeq: 'Press "Next" to start from No.1',
+    emptyMsgRnd: 'Press "Next" to start randomly',
+    labelNeg: 'Negative',
+    labelPos: 'Balance',
+    btnPrev: '◀ Prev',
+    btnNext: 'Next ▶',
+    btnReset: 'Restart',
+    btnFavDefault: 'Mark as resonant…',
+    btnFavSaved: 'Resonant (saved)',
+    numSearchLabel: '🔍 Jump to number',
+    numInputPlaceholder: '1–100',
+    historyTitle: 'Practice History (tap to revisit)',
+    histClearBtn: 'Clear all',
+    otherAppsToggleText: 'See other free apps',
+    appItems: [
+      { title: 'Shintai Balance School 💃', sub: 'Website' },
+      { title: 'All My Apps in One Place 🙋', sub: '(Japanese)' },
+      { title: 'Baka-Uke 5W1H ꉂ🤣𐤔', sub: 'The Olympics of Laughter 🏅' },
+      { title: 'Baka-Uke Senryu 🎋', sub: 'Hilarious 5-7-5 Gacha ꉂ🤣𐤔' },
+      { title: 'Fire & Water Fortune 🔥☔🎋', sub: 'Live More Comfortably as Yourself 👍' },
+      { title: 'ZANGE Confession 🕯️', sub: 'Forgive Yourself & Feel Lighter' },
+      { title: 'Open Heart Training ☯️', sub: 'Transform Your Life' },
+      { title: 'Words & Mental Balance Training ⚖️', sub: '← Here now' },
+      { title: 'Fire & Water Personality Test 🔥☔', sub: '12 Character Types ✏💃' },
+    ],
+    favHeaderLabel: 'My Favourites',
+    favTitle: '⭐ Words that resonated',
+    favEmptyP: 'When a word resonates during practice,<br>tap the button to save it',
+    philosophyHTML: `Don't <em>erase</em> the negative words—<br>
+      <em>counterbalance</em> them with positive ones.<br>
+      Hold both, and <em>balance</em> them—<br>
+      that's how true stability grows.`,
+    sectionTitleEn: 'Training Examples',
+    sectionTitleH2: '⚖️ Balance Training Examples',
+    card1kw: 'Crybaby', card1neg: 'Crying is embarrassing', card1pos: 'Tears are beautiful',
+    card2kw: 'Chubby',  card2neg: 'Overweight and unsightly', card2pos: 'Chubby and adorable',
+    card3kw: 'Coward',  card3neg: 'Weak and pathetic', card3pos: 'Sensitive enough to understand kindness',
+    bottomBig: 'Not conversion. Not erasure.<br><em>Hold both sides, without bias.</em><br>That is balance.',
+    bottomSub: 'Negative words don\'t need to disappear.<br>Placing a positive perspective beside them<br>tips the scales—and steadies the mind.',
+    jumpErrMsg: `⚠ Please enter a number between 1 and 100`,
+    completeMsg: '🎉 All words complete!',
+    numErrMsg: (max) => `⚠ Enter a number between 1 and ${max}`,
+  },
+  jp: {
+    htmlLang: 'ja',
+    headerLabel: 'Balance Training',
+    h1: '言葉と<span class="accent">メンタル</span>の<br>バランストレーニング',
+    appHeaderLabelSeq: 'Balance Maker — 順番練習モード',
+    appHeaderLabelRnd: 'Balance Maker — ランダムモード',
+    appHeaderTitle: '⚖️ バランスメーカー',
+    modeSeq: '📋 順番',
+    modeRnd: '🎲 ランダム',
+    progressSpan: 'No. <strong id="curNumLabel">—</strong> / 100',
+    resumeBadge: '📌 前回の続きから',
+    emptyMsgSeq: '「次へ」を押して No.1 からスタート',
+    emptyMsgRnd: '「次へ」を押してランダムにスタート',
+    labelNeg: 'ネガティブ',
+    labelPos: 'バランス',
+    btnPrev: '◀ 前へ',
+    btnNext: '次へ ▶',
+    btnReset: '最初から',
+    btnFavDefault: '響いた…と記録する',
+    btnFavSaved: '響いた（記録済み）',
+    numSearchLabel: '🔍 番号で引き出す',
+    numInputPlaceholder: '1〜100',
+    historyTitle: '練習ヒストリー（タップで再表示）',
+    histClearBtn: '全消去',
+    otherAppsToggleText: 'その他の無料アプリをみる',
+    appItems: [
+      { title: '心体調整塾', sub: 'ホームページ' },
+      { title: 'アプリ全部まとめはこちら', sub: '（日本語）' },
+      { title: 'バカウケ５Ｗ１Ｈ', sub: '笑いのオリンピック🏅' },
+      { title: 'バカウケ川柳', sub: '爆笑575ガチャꉂ🤣𐤔' },
+      { title: '火水おみくじ', sub: '自分らしく生きやすく👍' },
+      { title: 'ZANGE 懺悔', sub: '自分を許して軽くなる' },
+      { title: '素直力トレーニング', sub: '人生を好転させる' },
+      { title: '言葉とメンタルのバランストレーニング', sub: '← 今ここ' },
+      { title: '火水診断', sub: '12タイプ・キャラクター✏💃' },
+    ],
+    favHeaderLabel: 'My Favourites',
+    favTitle: '⭐ 響いた言葉',
+    favEmptyP: '練習中に「響いた」と感じたら<br>ボタンで記録できます',
+    philosophyHTML: `ネガティブな言葉を<em>消すのではなく</em>、<br>
+      ポジティブな言葉で<em>相殺する</em>。<br>
+      どちらも持ち、<em>バランスさせる</em>から<br>
+      本当の安定力が育つ。`,
+    sectionTitleEn: 'Training Examples',
+    sectionTitleH2: '⚖️ バランストレーニング 実例',
+    card1kw: '泣き虫', card1neg: '泣くのは恥ずかしい', card1pos: '涙は美しい',
+    card2kw: 'デブ',   card2neg: '太ってて見苦しい',   card2pos: 'ポッチャリしてかわいい',
+    card3kw: '弱虫',   card3neg: '弱くて情けないな',   card3pos: '繊細でやさしさがわかる',
+    bottomBig: '変換ではない。消去でもない。<br><em>かたよらず、両方を持つ。</em><br>それがバランス力。',
+    bottomSub: 'ネガティブワードは消えなくていい。<br>ポジティブな視点を隣に置くことで<br>てんびんが釣り合い、心が安定する。',
+    numErrMsg: (max) => `⚠ 1〜${max} の番号を入力してください`,
+  },
+  kr: {
+    htmlLang: 'ko',
+    headerLabel: 'Balance Training',
+    h1: '말과 <span class="accent">멘탈</span>의<br>밸런스 트레이닝',
+    appHeaderLabelSeq: 'Balance Maker — 순서 연습 모드',
+    appHeaderLabelRnd: 'Balance Maker — 랜덤 모드',
+    appHeaderTitle: '⚖️ 밸런스 메이커',
+    modeSeq: '📋 순서',
+    modeRnd: '🎲 랜덤',
+    progressSpan: 'No. <strong id="curNumLabel">—</strong> / 100',
+    resumeBadge: '📌 이어서 하기',
+    emptyMsgSeq: '"다음"을 눌러 No.1부터 시작',
+    emptyMsgRnd: '"다음"을 눌러 랜덤으로 시작',
+    labelNeg: '네거티브',
+    labelPos: '밸런스',
+    btnPrev: '◀ 이전',
+    btnNext: '다음 ▶',
+    btnReset: '처음부터',
+    btnFavDefault: '마음에 울린 말 저장…',
+    btnFavSaved: '저장됨 ⭐',
+    numSearchLabel: '🔍 번호로 찾기',
+    numInputPlaceholder: '1〜100',
+    historyTitle: '연습 기록 (탭하면 다시 보기)',
+    histClearBtn: '전체 삭제',
+    otherAppsToggleText: '다른 무료 앱 보기',
+    appItems: [
+      { title: '신체 조정 학교 💃', sub: '웹사이트' },
+      { title: '앱 전체 목록 🙋', sub: '(일본어)' },
+      { title: '바보 수용 5W1H ꉂ🤣𐤔', sub: '웃음의 올림픽 🏅' },
+      { title: '바보 수용 센류 🎋', sub: '폭소 575 가챠 ꉂ🤣𐤔' },
+      { title: '불과 물 오미쿠지 🔥☔🎋', sub: '나답게 편하게 살기 👍' },
+      { title: 'ZANGE 참회 🕯️', sub: '나를 용서하고 가볍게' },
+      { title: '솔직함 트레이닝 ☯️', sub: '인생을 좋은 방향으로' },
+      { title: '말과 멘탈의 밸런스 트레이닝 ⚖️', sub: '← 지금 여기' },
+      { title: '불과 물 진단 🔥☔', sub: '12타입 캐릭터 ✏💃' },
+    ],
+    favHeaderLabel: 'My Favourites',
+    favTitle: '⭐ 마음에 울린 말',
+    favEmptyP: '연습 중 "울렸다"고 느낀 말을<br>버튼으로 저장할 수 있습니다',
+    philosophyHTML: `네거티브한 말을 <em>지우는 것이 아니라</em>,<br>
+      포지티브한 말로 <em>상쇄한다</em>.<br>
+      둘 다 갖고, <em>균형을 맞추기에</em><br>
+      진정한 안정력이 길러진다.`,
+    sectionTitleEn: 'Training Examples',
+    sectionTitleH2: '⚖️ 밸런스 트레이닝 실례',
+    card1kw: '울보', card1neg: '우는 건 창피하다', card1pos: '눈물은 아름답다',
+    card2kw: '뚱뚱이', card2neg: '살쪄서 보기 싫다', card2pos: '통통하고 귀엽다',
+    card3kw: '겁쟁이', card3neg: '약하고 한심하다', card3pos: '섬세해서 다정함을 안다',
+    bottomBig: '변환이 아니다. 삭제도 아니다.<br><em>편견 없이 양쪽을 함께 갖는다.</em><br>그것이 밸런스 능력.',
+    bottomSub: '네거티브한 말은 사라지지 않아도 된다.<br>포지티브한 시각을 옆에 두는 것으로<br>저울이 균형을 잡고 마음이 안정된다.',
+    numErrMsg: (max) => `⚠ 1〜${max} 사이의 번호를 입력하세요`,
+  }
+};
+
+function toggleLangMenu() {
+  const dd = document.getElementById('langDropdown');
+  const btn = document.getElementById('langBtn');
+  const isOpen = dd.classList.contains('open');
+  dd.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+  if (!isOpen) {
+    document.addEventListener('click', closeLangMenuOutside, { once: true });
+  }
+}
+
+function closeLangMenuOutside(e) {
+  if (!document.querySelector('.lang-widget').contains(e.target)) {
+    document.getElementById('langDropdown').classList.remove('open');
+    document.getElementById('langBtn').classList.remove('open');
+  }
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  document.getElementById('langDropdown').classList.remove('open');
+  document.getElementById('langBtn').classList.remove('open');
+  applyLang(lang);
+}
+
+function applyLang(lang) {
+  const t = i18n[lang];
+  if (!t) return;
+
+  // html lang attr
+  document.documentElement.lang = t.htmlLang;
+
+  // Header
+  document.querySelector('.header-label').textContent = t.headerLabel;
+  document.querySelector('h1').innerHTML = t.h1;
+
+  // App header label (respects current mode)
+  const isSeq = mode === 'seq';
+  document.getElementById('appHeaderLabel').textContent =
+    isSeq ? t.appHeaderLabelSeq : t.appHeaderLabelRnd;
+  document.getElementById('appHeaderTitle').textContent = t.appHeaderTitle;
+  document.getElementById('modeSeq').textContent = t.modeSeq;
+  document.getElementById('modeRnd').textContent = t.modeRnd;
+
+  // Progress span (preserve current number label)
+  const curNum = document.getElementById('curNumLabel')?.textContent || '—';
+  document.getElementById('progressSpan').innerHTML =
+    t.progressSpan.replace('—', curNum);
+
+  // Resume badge
+  document.getElementById('resumeLabel').textContent = t.resumeBadge;
+
+  // Empty message
+  document.getElementById('emptyMsg').textContent =
+    isSeq ? t.emptyMsgSeq : t.emptyMsgRnd;
+
+  // Display labels
+  const negLabel = document.querySelector('.display-neg .display-label');
+  const posLabel = document.querySelector('.display-pos .display-label');
+  if (negLabel) negLabel.textContent = t.labelNeg;
+  if (posLabel) posLabel.textContent = t.labelPos;
+
+  // Nav buttons
+  document.getElementById('btnPrev').innerHTML = t.btnPrev;
+  // btnNext: preserve complete state
+  const btnNext = document.getElementById('btnNext');
+  if (!btnNext.disabled || !btnNext.textContent.includes('🎉')) {
+    btnNext.textContent = t.btnNext;
+  }
+  document.getElementById('btnReset').textContent = t.btnReset;
+
+  // Fav button
+  const favLabel = document.getElementById('btnFavLabel');
+  if (favLabel) {
+    const isSaved = document.getElementById('btnFav').classList.contains('active');
+    favLabel.textContent = isSaved ? t.btnFavSaved : t.btnFavDefault;
+  }
+
+  // Num search
+  document.querySelector('.num-search-label').textContent = t.numSearchLabel;
+  document.getElementById('numInput').placeholder = t.numInputPlaceholder;
+
+  // History
+  document.querySelector('.history-title').textContent = t.historyTitle;
+  document.querySelector('.btn-hist-clear').textContent = t.histClearBtn;
+
+  // Other apps toggle
+  document.querySelector('.other-apps-toggle-text').textContent = t.otherAppsToggleText;
+
+  // Other apps accordion items
+  if (t.appItems) {
+    const btns = document.querySelectorAll('.other-apps-body .app-btn');
+    btns.forEach((btn, i) => {
+      if (t.appItems[i]) {
+        const titleEl = btn.querySelector('.app-btn-title');
+        const subEl   = btn.querySelector('.app-btn-sub');
+        if (titleEl) titleEl.textContent = t.appItems[i].title;
+        if (subEl)   subEl.textContent   = t.appItems[i].sub;
+      }
+    });
+  }
+
+  // Fav section header
+  document.querySelector('.fav-header-label').textContent = t.favHeaderLabel;
+  document.querySelector('.fav-header h3').textContent = t.favTitle;
+  document.querySelector('.fav-empty p').innerHTML = t.favEmptyP;
+
+  // Philosophy
+  document.querySelector('.philosophy p').innerHTML = t.philosophyHTML;
+
+  // Section title
+  document.querySelector('.section-title .en').textContent = t.sectionTitleEn;
+  document.querySelector('.section-title h2').textContent = t.sectionTitleH2;
+
+  // Example cards
+  const cards = document.querySelectorAll('.balance-card');
+  if (cards.length >= 3) {
+    const setCard = (card, kw, neg, pos) => {
+      const kwEl = card.querySelector('.keyword-tag');
+      const stEl = card.querySelector('.side-tag');
+      if (kwEl) kwEl.textContent = kw;
+      if (stEl) stEl.textContent = lang === 'en' ? 'Balance' : lang === 'kr' ? '밸런스' : 'バランス';
+      card.querySelector('.side-neg .side-text').textContent = neg;
+      card.querySelector('.side-pos .side-text').textContent = pos;
+    };
+    setCard(cards[0], t.card1kw, t.card1neg, t.card1pos);
+    setCard(cards[1], t.card2kw, t.card2neg, t.card2pos);
+    setCard(cards[2], t.card3kw, t.card3neg, t.card3pos);
+  }
+
+  // Bottom message
+  document.querySelector('.bottom-msg .big').innerHTML = t.bottomBig;
+  document.querySelector('.bottom-msg .sub').innerHTML = t.bottomSub;
+
+  // Lang button label
+  if (lang === 'en') {
+    document.getElementById('langBtnFlag').textContent = '🌍';
+    document.getElementById('langBtnLabel').textContent = 'EN';
+    document.getElementById('optEN').classList.add('active');
+    document.getElementById('optJP').classList.remove('active');
+    document.getElementById('optKR').classList.remove('active');
+  } else if (lang === 'kr') {
+    document.getElementById('langBtnFlag').textContent = '🇰🇷';
+    document.getElementById('langBtnLabel').textContent = 'KO';
+    document.getElementById('optKR').classList.add('active');
+    document.getElementById('optEN').classList.remove('active');
+    document.getElementById('optJP').classList.remove('active');
+  } else {
+    document.getElementById('langBtnFlag').textContent = '🇯🇵';
+    document.getElementById('langBtnLabel').textContent = 'JP';
+    document.getElementById('optJP').classList.add('active');
+    document.getElementById('optEN').classList.remove('active');
+    document.getElementById('optKR').classList.remove('active');
+  }
+
+  // Re-render current card if visible
+  if (currentIndex >= 0) {
+    const item = data[currentIndex];
+    const isEn = lang === 'en';
+    const isKr = lang === 'kr';
+    document.getElementById('dispKeyword').textContent = isEn ? (item.kwEn || item.kw) : isKr ? (item.kwKr || item.kw) : item.kw;
+    document.getElementById('dispNeg').textContent     = isEn ? (item.negEn || item.neg) : isKr ? (item.negKr || item.neg) : item.neg;
+    document.getElementById('dispPos').textContent     = isEn ? (item.posEn || item.pos) : isKr ? (item.posKr || item.pos) : item.pos;
+  }
+
+  // Re-render history chips
+  const strip = document.getElementById('historyStrip');
+  if (strip) {
+    strip.querySelectorAll('.hist-chip').forEach(chip => {
+      const n = parseInt(chip.dataset.num);
+      if (!isNaN(n) && n >= 1 && n <= data.length) {
+        const d = data[n - 1];
+        const isEn = lang === 'en';
+        const isKr = lang === 'kr';
+        const kw  = isEn ? (d.kwEn  || d.kw)  : isKr ? (d.kwKr  || d.kw)  : d.kw;
+        const neg = isEn ? (d.negEn || d.neg) : isKr ? (d.negKr || d.neg) : d.neg;
+        const pos = isEn ? (d.posEn || d.pos) : isKr ? (d.posKr || d.pos) : d.pos;
+        chip.innerHTML = `<span class="chip-num">No.${n}</span>${kw}`;
+        chip.title = `No.${n}｜${neg} ▶ ${pos}`;
+      }
+    });
+  }
+
+  // Re-render fav items
+  const favList = document.getElementById('favList');
+  if (favList) {
+    favList.querySelectorAll('.fav-item').forEach(el => {
+      const n = parseInt(el.dataset.fav);
+      if (!isNaN(n) && n >= 1 && n <= data.length) {
+        const d = data[n - 1];
+        const isEn = lang === 'en';
+        const isKr = lang === 'kr';
+        const kw  = isEn ? (d.kwEn  || d.kw)  : isKr ? (d.kwKr  || d.kw)  : d.kw;
+        const pos = isEn ? (d.posEn || d.pos) : isKr ? (d.posKr || d.pos) : d.pos;
+        const kwEl  = el.querySelector('.fav-item-kw');
+        const posEl = el.querySelector('.fav-item-pos');
+        if (kwEl)  kwEl.textContent  = kw;
+        if (posEl) posEl.textContent = `▶ ${pos}`;
+      }
+    });
+  }
+}
+
+// ─── 初期化：前回の記録を復元 ─────────────────
+(function init() {
+  updateFavBtn(-1);
+
+  const hasHistory = loadState();
+  applyModeUI();
+
+  if (hasHistory) {
+    if (mode === 'seq' && currentIndex >= 0) {
+      document.getElementById('resumeLabel').style.display = 'inline-block';
+      showIndex(currentIndex, false);
+      const sorted = [...visitedNums].sort((a, b) => a - b);
+      sorted.forEach(num => addChip(num - 1));
+      document.getElementById('historyWrap').style.display = 'block';
+    } else if (mode === 'rnd' && randomPos >= 0 && randomShown.length > 0) {
+      if (randomPool.length === 0 && randomShown.length < data.length) {
+        const shown = new Set(randomShown);
+        randomPool = shuffle([...Array(data.length).keys()].filter(i => !shown.has(i)));
+      }
+      document.getElementById('resumeLabel').style.display = 'inline-block';
+      showIndex(randomShown[randomPos], false);
+      const sorted = [...visitedNums].sort((a, b) => a - b);
+      sorted.forEach(num => addChip(num - 1));
+      document.getElementById('historyWrap').style.display = 'block';
+    }
+  } else {
+    randomPool = shuffle([...Array(data.length).keys()]);
+  }
+
+  if (favorites.size > 0) {
+    const sortedFav = [...favorites].sort((a, b) => a - b);
+    sortedFav.forEach(num => addFavItem(num - 1));
+    renderFavSection();
+  }
+
+  // 言語初期化（デフォルト EN）
+  applyLang(currentLang);
+})();
+</script>
+
+</body>
+</html>
